@@ -1,0 +1,42 @@
+function CheckQuest()
+           MyLevel = game:GetService("Players").LocalPlayer.Data.Level.Value  
+             if MyLevel == 1 and MyLevel <= 9 then
+                mob = "Bandit [Lv. 5]"
+                Namequest = "BanditQuest1"
+                Numberquest = 1
+                MeCFrame = CFrame.new(1059.37195, 17.9649925, 1550.42371, 0.939700544, -0, -0.341998369, 0, 1, -0, 0.341998369, 0, 0.939700544)
+                CFrameMon = CFrame.new(1199.31287, 52.2717781, 1536.91516, -0.929782331, 6.60215846e-08, -0.368109822, 3.9077392e-08, 1, 8.06501603e-08, 0.368109822, 6.06023249e-08, -0.929782331)
+
+        elseif   MyLevel >= 10  and MyLevel <= 14 then
+                mob = "Monkey [Lv. 14]"
+                Namequest = "JungleQuest"
+                Numberquest = 1
+                MeCFrame =  CFrame.new(-1.60033948e3, 36.8521385, 154.441147)
+                CFrameMon = CFrame.new(-1437.92346, 22.8521061, 219.017349, -0.991496682, 3.82256644e-08, -0.13013202, 3.68155568e-08, 1, 1.32416362e-08, 0.13013202, 8.33815594e-09, -0.991496682)
+
+        elseif  MyLevel >= 15 and MyLevel <= 29 then
+                mob = "Gorilla [Lv. 20]"
+                Namequest = "JungleQuest"
+                Numberquest = 2
+                MeCFrame =  CFrame.new(-1.60033948e3, 36.8521385, 154.441147)
+                CFrameMon = CFrame.new(-1290.61926, 37.4975739, -470.978577, 0.969616055, 0, 0.244631827, -0, 1, -0, -0.244631827, 0, 0.969616055)
+         elseif  MyLevel >= 30 and MyLevel <= 39 then
+                mob = "Pirate [Lv. 35]"
+                Namequest = "BuggyQuest1"
+                Numberquest = 1
+                MeCFrame =  CFrame.new(-1141.19739, 4.75204945, 3829.98682, -0.994560003, 5.38543539e-08, 0.10416536, 5.23746415e-08, 1, -1.69406764e-08, -0.10416536, -1.13928955e-08, -0.994560003)
+                CFrameMon = CFrame.new(-1151.60876, 44.1014557, 3873.24048, -0.5732162, -2.51314916e-08, 0.819404185, 6.99362923e-09, 1, 3.55628558e-08, -0.819404185, 2.61158153e-08, -0.5732162)
+         elseif  MyLevel >= 40 and MyLevel <= 59 then
+                mob = "Brute [Lv. 45]"
+                Namequest = "BuggyQuest1"
+                Numberquest = 2
+                MeCFrame =  CFrame.new(-1141.19739, 4.75204945, 3829.98682, -0.994560003, 5.38543539e-08, 0.10416536, 5.23746415e-08, 1, -1.69406764e-08, -0.10416536, -1.13928955e-08, -0.994560003)
+                CFrameMon = CFrame.new(-1309.77271, 15.0898724, 4297.63428, -0.323405892, 1.13280612e-06, -0.946260452, 1.27691578e-07, 1, 1.15349849e-06, 0.946260452, 2.52219138e-07, -0.323405892)
+         elseif  MyLevel >= 120 and MyLevel <= 149 then
+                mob = "Chief Petty Officer [Lv. 120]"
+                Namequest = "MarineQuest2"
+                Numberquest = 1
+                MeCFrame =  CFrame.new(-5037.70654, 28.6520348, 4325.5542, -0.0133304494, 5.07148492e-08, 0.999911129, -1.77470874e-08, 1, -5.09559541e-08, -0.999911129, -1.84247746e-08, -0.0133304494)
+                CFrameMon = CFrame.new(-5037.70654, 28.6520348, 4325.5542, -0.0133304494, 5.07148492e-08, 0.999911129, -1.77470874e-08, 1, -5.09559541e-08, -0.999911129, -1.84247746e-08, -0.0133304494)
+        end
+end
