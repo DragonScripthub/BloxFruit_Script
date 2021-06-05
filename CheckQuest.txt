@@ -5,7 +5,6 @@ function CheckQuest()
                 questname = "BanditQuest1"
                 questno = 1
                 MeCFrame = CFrame.new(1059.37195, 17.9649925, 1550.42371, 0.939700544, -0, -0.341998369, 0, 1, -0, 0.341998369, 0, 0.939700544)
- 6.06023249e-08, -0.929782331)
         elseif   MyLevel >= 10  and MyLevel <= 14 then
                 mob = "Monkey [Lv. 14]"
                 questname = "JungleQuest"
