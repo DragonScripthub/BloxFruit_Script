@@ -544,16 +544,17 @@ function Flux:Window(text, bottom,mainclr,toclose)
 					{TextTransparency = 0.3}
 				):Play()
 			end)
-			
-			  Button.MouseLeave:Connect(
-			   function()
-			      TweenService:Create(
-				 Button,
-				 TweenInfo.new(.2, Enum.EasingStyle.Quad),
-				 {BackgroundColor3 = Color3.fromRGB(35, 35, 35)}
-			      ):Play()
-			   end)
+
 			   Container.CanvasSize = UDim2.new(0, 0, 0, ContainerLayout.AbsoluteContentSize.Y)
+			   Button.MouseButton1Click:Connect(
+			   function()
+			      pcall(callback)
+			      Button.TextSize = 0
+			      TweenService:Create(Button, TweenInfo.new(.2, Enum.EasingStyle.Quad), {TextSize = 17}):Play()
+			      wait(.2)
+			      TweenService:Create(Button, TweenInfo.new(.2, Enum.EasingStyle.Quad), {TextSize = 14}):Play()
+			   end)
+		     end
 		function ContainerContent:Toggle(text, desc,default, callback)
 			local ToggleDescToggled = false
 			local Toggled = false
