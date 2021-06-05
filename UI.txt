@@ -148,7 +148,7 @@ if game.CoreGui:FindFirstChild("Library") then
   MainTitle.BackgroundTransparency = 1.000
   MainTitle.Position = UDim2.new(0.168, 0, 0.043, 0)
   MainTitle.Size = UDim2.new(0, 71, 0, 20)
-  MainTitle.Font = Enum.Font.Gotham 
+  MainTitle.Font = Enum.Font.Cartoon 
   MainTitle.Text = text
   MainTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
   MainTitle.TextSize = 25.000
@@ -161,7 +161,7 @@ if game.CoreGui:FindFirstChild("Library") then
   GameTitle.BackgroundTransparency = 1.000
   GameTitle.Position = UDim2.new(0.168, 0, 0.089, 6)
   GameTitle.Size = UDim2.new(0, 71, 0, 20)
-  GameTitle.Font = Enum.Font.Gotham
+  GameTitle.Font = Enum.Font.Cartoon
   GameTitle.Text = textgame
   GameTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
   GameTitle.TextSize = 17.000
@@ -265,7 +265,7 @@ if game.CoreGui:FindFirstChild("Library") then
      OkayBtnTitle.BackgroundTransparency = 1.000
      OkayBtnTitle.Size = UDim2.new(0, 200, 0, 42)
      OkayBtnTitle.Text = "Okey"
-     OkayBtnTitle.Font = Enum.Font.Gotham
+     OkayBtnTitle.Font = Enum.Font.Cartoon
      OkayBtnTitle.TextColor3 = Color3.fromRGB(202, 202, 202)
      OkayBtnTitle.TextSize = 24.000
  
@@ -276,7 +276,7 @@ if game.CoreGui:FindFirstChild("Library") then
      NotificationTitle.Position = UDim2.new(0.0559394211, 0, 0.0652336925, 0)
      NotificationTitle.Size = UDim2.new(0, 272, 0, 26)
      NotificationTitle.ZIndex = 3
-     NotificationTitle.Font = Enum.Font.Gotham
+     NotificationTitle.Font = Enum.Font.Cartoon
      NotificationTitle.Text = "Notification"
      NotificationTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
      NotificationTitle.TextSize = 24.000
@@ -287,7 +287,7 @@ if game.CoreGui:FindFirstChild("Library") then
      NotificationDesc.BackgroundTransparency = 1.000
      NotificationDesc.Position = UDim2.new(0.0670000017, 0, 0.218999997, 0)
      NotificationDesc.Size = UDim2.new(0, 274, 0, 146)
-     NotificationDesc.Font = Enum.Font.Gotham
+     NotificationDesc.Font = Enum.Font.Cartoon
      NotificationDesc.Text = textdesc
      NotificationDesc.TextColor3 = Color3.fromRGB(255, 255, 255)
      NotificationDesc.TextSize = 20.000
@@ -365,7 +365,7 @@ if game.CoreGui:FindFirstChild("Library") then
      Title.BackgroundTransparency = 1.000
      Title.Position = UDim2.new(0.0566037744, 0, 0.1, 0)
      Title.Size = UDim2.new(0, 150, 0, 29)
-     Title.Font = Enum.Font.Gotham
+     Title.Font = Enum.Font.Cartoon
      Title.Text = text
      Title.TextColor3 = Color3.fromRGB(255, 255, 255)
      Title.TextSize = 17.000
@@ -432,7 +432,7 @@ if game.CoreGui:FindFirstChild("Library") then
         Button.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
         Button.Size = UDim2.new(0, 405, 0, 40)
         Button.AutoButtonColor = false
-        Button.Font = Enum.Font.Gotham
+        Button.Font = Enum.Font.Cartoon
         Button.TextColor3 = Color3.fromRGB(255, 255, 255)
         Button.TextSize = 15.000
         Button.Text = text
@@ -491,7 +491,7 @@ if game.CoreGui:FindFirstChild("Library") then
         Toggle.Position = UDim2.new(-0.747557044, 0, 0.729113936, 0)
         Toggle.Size = UDim2.new(0, 405, 0, 40)
         Toggle.AutoButtonColor = false
-        Toggle.Font = Enum.Font.Gotham
+        Toggle.Font = Enum.Font.Cartoon
         Toggle.Text = ""
         Toggle.TextColor3 = Color3.fromRGB(255, 255, 255)
         Toggle.TextSize = 14.000
@@ -506,7 +506,7 @@ if game.CoreGui:FindFirstChild("Library") then
         Title.BackgroundTransparency = 1.000
         Title.Position = UDim2.new(0.0198511165, 0, 0, 0)
         Title.Size = UDim2.new(0, 430, 0, 40)
-        Title.Font = Enum.Font.Gotham
+        Title.Font = Enum.Font.Cartoon
         Title.Text = text
         Title.TextColor3 = Color3.fromRGB(255, 255, 255)
         Title.TextSize = 15.000
@@ -649,7 +649,7 @@ if game.CoreGui:FindFirstChild("Library") then
         Slider.Position = UDim2.new(-0.747557044, 0, 0.729113936, 0)
         Slider.Size = UDim2.new(0, 405, 0, 49)
         Slider.AutoButtonColor = false
-        Slider.Font = Enum.Font.Gotham
+        Slider.Font = Enum.Font.Cartoon
         Slider.Text = ""
         Slider.TextColor3 = Color3.fromRGB(255, 255, 255)
         Slider.TextSize = 14.000
@@ -660,7 +660,7 @@ if game.CoreGui:FindFirstChild("Library") then
         Title.BackgroundTransparency = 1.000
         Title.Position = UDim2.new(0.0198511165, 0, 0, 0)
         Title.Size = UDim2.new(0, 192, 0, 28)
-        Title.Font = Enum.Font.Gotham
+        Title.Font = Enum.Font.Cartoon
         Title.Text = text
         Title.TextColor3 = Color3.fromRGB(255, 255, 255)
         Title.TextSize = 14.000
@@ -698,7 +698,7 @@ if game.CoreGui:FindFirstChild("Library") then
         Value.BackgroundTransparency = 1.000
         Value.Position = UDim2.new(0.496277869, 0, 0, 0)
         Value.Size = UDim2.new(0, 192, 0, 28)
-        Value.Font = Enum.Font.Gotham
+        Value.Font = Enum.Font.Cartoon
         Value.Text = tostring(start and math.floor((start / max) * (max - min) + min) or 0)
         Value.TextColor3 = Color3.fromRGB(255, 255, 255)
         Value.TextSize = 14.000
@@ -763,7 +763,7 @@ if game.CoreGui:FindFirstChild("Library") then
         Dropdown.Position = UDim2.new(-0.747557044, 0, 0.729113936, 0)
         Dropdown.Size = UDim2.new(0, 405, 0, 45)
         Dropdown.AutoButtonColor = false
-        Dropdown.Font = Enum.Font.Gotham
+        Dropdown.Font = Enum.Font.Cartoon
         Dropdown.Text = ""
         Dropdown.TextColor3 = Color3.fromRGB(255, 255, 255)
         Dropdown.TextSize = 15.000
@@ -774,7 +774,7 @@ if game.CoreGui:FindFirstChild("Library") then
         Title.BackgroundTransparency = 1.000
         Title.Position = UDim2.new(0.0198511165, 0, 0, 0)
         Title.Size = UDim2.new(0, 192, 0, 40)
-        Title.Font = Enum.Font.Gotham
+        Title.Font = Enum.Font.Cartoon
         Title.Text = text
         Title.TextColor3 = Color3.fromRGB(255, 255, 255)
         Title.TextSize = 15.000
@@ -929,7 +929,7 @@ if game.CoreGui:FindFirstChild("Library") then
            Item.Position = UDim2.new(0, 0, 0.0808080807, 0)
            Item.Size = UDim2.new(0, 405, 0, 24)
            Item.AutoButtonColor = false
-           Item.Font = Enum.Font.Gotham
+           Item.Font = Enum.Font.Cartoon
            Item.TextColor3 = Color3.fromRGB(255, 255, 255)
            Item.TextSize = 14.000
            Item.Text = v
@@ -1048,7 +1048,7 @@ if game.CoreGui:FindFirstChild("Library") then
            Item.Position = UDim2.new(0, 0, 0.0808080807, 0)
            Item.Size = UDim2.new(0, 405, 0, 24)
            Item.AutoButtonColor = false
-           Item.Font = Enum.Font.Gotham
+           Item.Font = Enum.Font.Cartoon
            Item.TextColor3 = Color3.fromRGB(255, 255, 255)
            Item.TextSize = 14.000
            Item.Text = toadd
@@ -1136,7 +1136,7 @@ if game.CoreGui:FindFirstChild("Library") then
         Colorpicker.Position = UDim2.new(-0.747557044, 0, 0.729113936, 0)
         Colorpicker.Size = UDim2.new(0, 405, 0, 40)
         Colorpicker.AutoButtonColor = false
-        Colorpicker.Font = Enum.Font.Gotham
+        Colorpicker.Font = Enum.Font.Cartoon
         Colorpicker.Text = ""
         Colorpicker.TextColor3 = Color3.fromRGB(255, 255, 255)
         Colorpicker.TextSize = 14.000
@@ -1147,7 +1147,7 @@ if game.CoreGui:FindFirstChild("Library") then
         Title.BackgroundTransparency = 1.000
         Title.Position = UDim2.new(0.0198511165, 0, 0, 0)
         Title.Size = UDim2.new(0, 405, 0, 40)
-        Title.Font = Enum.Font.Gotham
+        Title.Font = Enum.Font.Cartoon
         Title.Text = text
         Title.TextColor3 = Color3.fromRGB(255, 255, 255)
         Title.TextSize = 15.000
@@ -1262,7 +1262,7 @@ if game.CoreGui:FindFirstChild("Library") then
         Confirm.Position = UDim2.new(0.612244904, 0, 0.0900000036, 0)
         Confirm.Size = UDim2.new(0, 145, 0, 27)
         Confirm.AutoButtonColor = false
-        Confirm.Font = Enum.Font.Gotham
+        Confirm.Font = Enum.Font.Cartoon
         Confirm.Text = "Confirm"
         Confirm.TextColor3 = Color3.fromRGB(255, 255, 255)
         Confirm.TextSize = 14.000
@@ -1276,7 +1276,7 @@ if game.CoreGui:FindFirstChild("Library") then
         RainbowToggle.Position = UDim2.new(0.610732794, 0, 0.431324542, 0)
         RainbowToggle.Size = UDim2.new(0, 145, 0, 27)
         RainbowToggle.AutoButtonColor = false
-        RainbowToggle.Font = Enum.Font.Gotham
+        RainbowToggle.Font = Enum.Font.Cartoon
         RainbowToggle.Text = ""
         RainbowToggle.TextColor3 = Color3.fromRGB(255, 255, 255)
         RainbowToggle.TextSize = 14.000
@@ -1290,7 +1290,7 @@ if game.CoreGui:FindFirstChild("Library") then
         RainbowTitle.BackgroundTransparency = 1.000
         RainbowTitle.Position = UDim2.new(0.0204080511, 0, 0, 0)
         RainbowTitle.Size = UDim2.new(0, 29, 0, 27)
-        RainbowTitle.Font = Enum.Font.Gotham
+        RainbowTitle.Font = Enum.Font.Cartoon
         RainbowTitle.Text = "Rainbow"
         RainbowTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
         RainbowTitle.TextSize = 14.000
@@ -1582,7 +1582,7 @@ if game.CoreGui:FindFirstChild("Library") then
         Label.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
         Label.Size = UDim2.new(0, 405, 0, 40)
         Label.AutoButtonColor = false
-        Label.Font = Enum.Font.Gotham
+        Label.Font = Enum.Font.Cartoon
         Label.TextColor3 = Color3.fromRGB(255, 255, 255)
         Label.TextSize = 17.000
         Label.Text = text
@@ -1610,7 +1610,7 @@ if game.CoreGui:FindFirstChild("Library") then
         Label.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
         Label.Size = UDim2.new(0, 405, 0, 5)
         Label.AutoButtonColor = false
-        Label.Font = Enum.Font.Gotham
+        Label.Font = Enum.Font.Cartoon
         Label.TextColor3 = Color3.fromRGB(255, 255, 255)
         Label.TextSize = 17.000
         Label.Text = ""
@@ -1646,7 +1646,7 @@ if game.CoreGui:FindFirstChild("Library") then
         Keybind.Position = UDim2.new(-0.747557044, 0, 0.729113936, 0)
         Keybind.Size = UDim2.new(0, 405, 0, 40)
         Keybind.AutoButtonColor = false
-        Keybind.Font = Enum.Font.Gotham
+        Keybind.Font = Enum.Font.Cartoon
         Keybind.Text = ""
         Keybind.TextColor3 = Color3.fromRGB(255, 255, 255)
         Keybind.TextSize = 14.000
@@ -1657,7 +1657,7 @@ if game.CoreGui:FindFirstChild("Library") then
         Title.BackgroundTransparency = 1.000
         Title.Position = UDim2.new(0.0198511165, 0, 0, 0)
         Title.Size = UDim2.new(0, 405, 0, 40)
-        Title.Font = Enum.Font.Gotham
+        Title.Font = Enum.Font.Cartoon
         Title.Text = "Keybind"
         Title.TextColor3 = Color3.fromRGB(255, 255, 255)
         Title.TextSize = 15.000
@@ -1677,7 +1677,7 @@ if game.CoreGui:FindFirstChild("Library") then
         TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
         TextButton.BackgroundTransparency = 1.000
         TextButton.Size = UDim2.new(0, 134, 0, 23)
-        TextButton.Font = Enum.Font.Gotham
+        TextButton.Font = Enum.Font.Cartoon
         TextButton.Text = "Keybind"
         TextButton.TextColor3 = Color3.fromRGB(178, 178, 178)
         TextButton.TextSize = 15.000
@@ -1767,7 +1767,7 @@ if game.CoreGui:FindFirstChild("Library") then
         Textbox.Position = UDim2.new(-0.747557044, 0, 0.729113936, 0)
         Textbox.Size = UDim2.new(0, 405, 0, 40)
         Textbox.AutoButtonColor = false
-        Textbox.Font = Enum.Font.Gotham
+        Textbox.Font = Enum.Font.Cartoon
         Textbox.Text = ""
         Textbox.TextColor3 = Color3.fromRGB(255, 255, 255)
         Textbox.TextSize = 14.000
@@ -1778,7 +1778,7 @@ if game.CoreGui:FindFirstChild("Library") then
         Title.BackgroundTransparency = 1.000
         Title.Position = UDim2.new(0.0198511165, 0, 0, 0)
         Title.Size = UDim2.new(0, 405, 0, 40)
-        Title.Font = Enum.Font.Gotham
+        Title.Font = Enum.Font.Cartoon
         Title.Text = text
         Title.TextColor3 = Color3.fromRGB(255, 255, 255)
         Title.TextSize = 15.000
@@ -1798,7 +1798,7 @@ if game.CoreGui:FindFirstChild("Library") then
         TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
         TextBox.BackgroundTransparency = 1.000
         TextBox.Size = UDim2.new(0, 134, 0, 19)
-        TextBox.Font = Enum.Font.Gotham
+        TextBox.Font = Enum.Font.Cartoon
         TextBox.Text = ""
         TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
         TextBox.TextSize = 15.000
