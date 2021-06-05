@@ -1,6 +1,5 @@
 function CheckQuest()
            MyLevel = game:GetService("Players").LocalPlayer.Data.Level.Value 
-        if OldWorld then 
              if MyLevel >= 1 and MyLevel <= 9 then
                 mob = "Bandit [Lv. 5]"
                 questname = "BanditQuest1"
@@ -136,8 +135,6 @@ function CheckQuest()
                  questno = 2
                  MeCFrame = CFrame.new(5254.60156, 38.5011406, 4049.69678, -0.0504891425, -3.62066501e-08, -0.998724639, -9.87921389e-09, 1, -3.57534553e-08, 0.998724639, 8.06145284e-09, -0.0504891425)
               end
-           end
-           if newworld then
               if MyLevel >= 700 and MyLevel <= 724 then -- Raider [Lv. 700]
                  Mob = "Raider [Lv. 700]"
                  questname = "Area1Quest"
@@ -250,4 +247,4 @@ function CheckQuest()
                   MeCFrame = CFrame.new(-3052.99097, 236.881363, -10148.1943, -0.997911751, 4.42321983e-08, 0.064591676, 4.90968759e-08, 1, 7.37270085e-08, -0.064591676, 7.67442998e-08, -0.997911751)
         end   
     end   
-end
+
