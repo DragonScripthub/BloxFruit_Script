@@ -1,98 +1,252 @@
 function CheckQuest()
-           MyLevel = game:GetService("Players").LocalPlayer.Data.Level.Value 
-             if MyLevel >= 1 and MyLevel <= 9 then
-                mob = "Bandit [Lv. 5]"
-                questname = "BanditQuest1"
-                questno = 1
-                MeCFrame = CFrame.new(1059.37195, 17.9649925, 1550.42371, 0.939700544, -0, -0.341998369, 0, 1, -0, 0.341998369, 0, 0.939700544)
-        elseif   MyLevel >= 10  and MyLevel <= 14 then
-                mob = "Monkey [Lv. 14]"
-                questname = "JungleQuest"
-                questno = 1
-                MeCFrame =  CFrame.new(-1.60033948e3, 36.8521385, 154.441147)
+    MyLevel = game:GetService("Players").LocalPlayer.Data.Level.Value 
+ if OldWorld then 
+      if MyLevel >= 1 and MyLevel <= 9 then
+         mob = "Bandit [Lv. 5]"
+         questname = "BanditQuest1"
+         questno = 1
+         MeCFrame = CFrame.new(1059.37195, 17.9649925, 1550.42371, 0.939700544, -0, -0.341998369, 0, 1, -0, 0.341998369, 0, 0.939700544)
+ elseif   MyLevel >= 10  and MyLevel <= 14 then
+         mob = "Monkey [Lv. 14]"
+         questname = "JungleQuest"
+         questno = 1
+         MeCFrame =  CFrame.new(-1.60033948e3, 36.8521385, 154.441147)
 
-        elseif  MyLevel >= 15 and MyLevel <= 29 then
-                mob = "Gorilla [Lv. 20]"
-                questname = "JungleQuest"
-                questno = 2
-                MeCFrame =  CFrame.new(-1.60033948e3, 36.8521385, 154.441147)
+ elseif  MyLevel >= 15 and MyLevel <= 29 then
+         mob = "Gorilla [Lv. 20]"
+         questname = "JungleQuest"
+         questno = 2
+         MeCFrame =  CFrame.new(-1.60033948e3, 36.8521385, 154.441147)
 
-         elseif  MyLevel >= 30 and MyLevel <= 39 then
-                mob = "Pirate [Lv. 35]"
-                questname = "BuggyQuest1"
-                questno = 1
-                MeCFrame =  CFrame.new(-1141.19739, 4.75204945, 3829.98682, -0.994560003, 5.38543539e-08, 0.10416536, 5.23746415e-08, 1, -1.69406764e-08, -0.10416536, -1.13928955e-08, -0.994560003)
-                
-         elseif  MyLevel >= 40 and MyLevel <= 59 then
-                mob = "Brute [Lv. 45]"
-                questname = "BuggyQuest1"
-                questno = 2
-                MeCFrame =  CFrame.new(-1141.19739, 4.75204945, 3829.98682, -0.994560003, 5.38543539e-08, 0.10416536, 5.23746415e-08, 1, -1.69406764e-08, -0.10416536, -1.13928955e-08, -0.994560003)
-     
-         elseif  MyLevel >= 60 and MyLevel <= 74 then
-                mob = "Desert Bandit [Lv. 60]"
-                questname = "DesertQuest"
-                questno = 1
-                MeCFrame =  CFrame.new(895.628113, 6.43846178, 4390.89404, -0.841467679, -4.77309428e-08, 0.540307403, -5.11690104e-08, 1, 8.65039684e-09, -0.540307403, -2.03679669e-08, -0.841467679)     
-        elseif  MyLevel >= 75 and MyLevel <= 89 then
-                mob = "Desert Officer [Lv. 70]"
-                questname = "DesertQuest"
-                questno = 2
-                MeCFrame =  CFrame.new(895.628113, 6.43846178, 4390.89404, -0.841467679, -4.77309428e-08, 0.540307403, -5.11690104e-08, 1, 8.65039684e-09, -0.540307403, -2.03679669e-08, -0.841467679)
-                
-        elseif  MyLevel >= 90 and MyLevel <= 99 then
-                mob = "Snow Bandit [Lv. 90]"
-                questname = "SnowQuest"
-                questno = 1
-                MeCFrame =  CFrame.new(1388.08057, 87.272789, -1296.52271, 0.503127694, -7.63643513e-08, -0.864212096, 1.01703293e-07, 1, -2.91532682e-08, 0.864212096, -7.32254009e-08, 0.503127694)
-                
-         elseif  MyLevel >= 100 and MyLevel <= 119 then
-                mob = "Snowman [Lv. 100]"
-                questname = "SnowQuest"
-                questno = 2
-                MeCFrame =  CFrame.new(1388.08057, 87.272789, -1296.52271, 0.503127694, -7.63643513e-08, -0.864212096, 1.01703293e-07, 1, -2.91532682e-08, 0.864212096, -7.32254009e-08, 0.503127694)
-                
-          elseif  MyLevel >= 120 and MyLevel <= 149 then
-                mob = "Chief Petty Officer [Lv. 120]"
-                questname = "MarineQuest2"
-                questno = 1
-                MeCFrame =  CFrame.new(-5038.14551, 28.6520348, 4325.06885, 0.0247529857, -7.53077813e-08, 0.999693573, 5.5499914e-08, 1, 7.39566488e-08, -0.999693573, 5.36522613e-08, 0.0247529857)
-                
-          elseif  MyLevel >= 150 and MyLevel <= 174 then
-                mob = "Sky Bandit [Lv. 150]"
-                questname = "SkyQuest"
-                questno = 1
-                MeCFrame =  CFrame.new(-4843.06104, 717.669617, -2619.89453, -0.625773609, -5.8589233e-08, -0.78000474, -2.17756941e-08, 1, -5.76439803e-08, 0.78000474, -1.90869365e-08, -0.625773609)
-                
-           elseif  MyLevel >= 175 and MyLevel <= 224 then
-                mob = "Dark Master [Lv. 175]"
-                questname = "SkyQuest"
-                questno = 2
-                MeCFrame =  CFrame.new(-4843.06104, 717.669617, -2619.89453, -0.625773609, -5.8589233e-08, -0.78000474, -2.17756941e-08, 1, -5.76439803e-08, 0.78000474, -1.90869365e-08, -0.625773609)
+  elseif  MyLevel >= 30 and MyLevel <= 39 then
+         mob = "Pirate [Lv. 35]"
+         questname = "BuggyQuest1"
+         questno = 1
+         MeCFrame =  CFrame.new(-1141.19739, 4.75204945, 3829.98682, -0.994560003, 5.38543539e-08, 0.10416536, 5.23746415e-08, 1, -1.69406764e-08, -0.10416536, -1.13928955e-08, -0.994560003)
+         
+  elseif  MyLevel >= 40 and MyLevel <= 59 then
+         mob = "Brute [Lv. 45]"
+         questname = "BuggyQuest1"
+         questno = 2
+         MeCFrame =  CFrame.new(-1141.19739, 4.75204945, 3829.98682, -0.994560003, 5.38543539e-08, 0.10416536, 5.23746415e-08, 1, -1.69406764e-08, -0.10416536, -1.13928955e-08, -0.994560003)
+
+  elseif  MyLevel >= 60 and MyLevel <= 74 then
+         mob = "Desert Bandit [Lv. 60]"
+         questname = "DesertQuest"
+         questno = 1
+         MeCFrame =  CFrame.new(895.628113, 6.43846178, 4390.89404, -0.841467679, -4.77309428e-08, 0.540307403, -5.11690104e-08, 1, 8.65039684e-09, -0.540307403, -2.03679669e-08, -0.841467679)     
+ elseif  MyLevel >= 75 and MyLevel <= 89 then
+         mob = "Desert Officer [Lv. 70]"
+         questname = "DesertQuest"
+         questno = 2
+         MeCFrame =  CFrame.new(895.628113, 6.43846178, 4390.89404, -0.841467679, -4.77309428e-08, 0.540307403, -5.11690104e-08, 1, 8.65039684e-09, -0.540307403, -2.03679669e-08, -0.841467679)
+         
+ elseif  MyLevel >= 90 and MyLevel <= 99 then
+         mob = "Snow Bandit [Lv. 90]"
+         questname = "SnowQuest"
+         questno = 1
+         MeCFrame =  CFrame.new(1388.08057, 87.272789, -1296.52271, 0.503127694, -7.63643513e-08, -0.864212096, 1.01703293e-07, 1, -2.91532682e-08, 0.864212096, -7.32254009e-08, 0.503127694)
+         
+  elseif  MyLevel >= 100 and MyLevel <= 119 then
+         mob = "Snowman [Lv. 100]"
+         questname = "SnowQuest"
+         questno = 2
+         MeCFrame =  CFrame.new(1388.08057, 87.272789, -1296.52271, 0.503127694, -7.63643513e-08, -0.864212096, 1.01703293e-07, 1, -2.91532682e-08, 0.864212096, -7.32254009e-08, 0.503127694)
+         
+   elseif  MyLevel >= 120 and MyLevel <= 149 then
+         mob = "Chief Petty Officer [Lv. 120]"
+         questname = "MarineQuest2"
+         questno = 1
+         MeCFrame =  CFrame.new(-5038.14551, 28.6520348, 4325.06885, 0.0247529857, -7.53077813e-08, 0.999693573, 5.5499914e-08, 1, 7.39566488e-08, -0.999693573, 5.36522613e-08, 0.0247529857)
+         
+   elseif  MyLevel >= 150 and MyLevel <= 174 then
+         mob = "Sky Bandit [Lv. 150]"
+         questname = "SkyQuest"
+         questno = 1
+         MeCFrame =  CFrame.new(-4843.06104, 717.669617, -2619.89453, -0.625773609, -5.8589233e-08, -0.78000474, -2.17756941e-08, 1, -5.76439803e-08, 0.78000474, -1.90869365e-08, -0.625773609)
+         
+    elseif  MyLevel >= 175 and MyLevel <= 224 then
+         mob = "Dark Master [Lv. 175]"
+         questname = "SkyQuest"
+         questno = 2
+         MeCFrame =  CFrame.new(-4843.06104, 717.669617, -2619.89453, -0.625773609, -5.8589233e-08, -0.78000474, -2.17756941e-08, 1, -5.76439803e-08, 0.78000474, -1.90869365e-08, -0.625773609)
+    
+    elseif  MyLevel >= 225 and MyLevel <= 274 then
+         mob = "Toga Warrior [Lv. 225]"
+         questname = "ColosseumQuest"
+         questno = 1
+         MeCFrame =  CFrame.new(-1578.96326, 7.38933659, -2985.26563, 0.929997921, 2.58211976e-08, -0.367564797, -7.48350004e-08, 1, -1.19095183e-07, 0.367564797, 1.3826498e-07, 0.929997921)
            
-           elseif  MyLevel >= 225 and MyLevel <= 274 then
-                mob = "Toga Warrior [Lv. 225]"
-                questname = "ColosseumQuest"
-                questno = 1
-                MeCFrame =  CFrame.new(-1578.96326, 7.38933659, -2985.26563, 0.929997921, 2.58211976e-08, -0.367564797, -7.48350004e-08, 1, -1.19095183e-07, 0.367564797, 1.3826498e-07, 0.929997921)
-                  
-           elseif  MyLevel >= 275 and MyLevel <= 299 then
-                mob = "Gladiator [Lv. 275]"
-                questname = "ColosseumQuest"
-                questno = 2
-                MeCFrame =  CFrame.new(-1578.96326, 7.38933659, -2985.26563, 0.929997921, 2.58211976e-08, -0.367564797, -7.48350004e-08, 1, -1.19095183e-07, 0.367564797, 1.3826498e-07, 0.929997921)
-                
-           elseif  MyLevel >= 300 and MyLevel <= 329 then
-                mob = "Military Soldier [Lv. 300]"
-                questname = "MagmaQuest"
-                questno = 1
-                MeCFrame =  CFrame.new(-5314.0874, 12.2364721, 8517.30957, 0.892060339, 3.27445875e-08, 0.451916307, 3.79605902e-09, 1, -7.99504249e-08, -0.451916307, 7.30361052e-08, 0.892060339)
-               
-           elseif  MyLevel >= 330 and MyLevel <= 374 then
-                mob = "Military Spy [Lv. 330]"
-                questname = "MagmaQuest"
-                questno = 2
-                MeCFrame =  CFrame.new(-5314.0874, 12.2364721, 8517.30957, 0.892060339, 3.27445875e-08, 0.451916307, 3.79605902e-09, 1, -7.99504249e-08, -0.451916307, 7.30361052e-08, 0.892060339) 
-      end
-      end
-
+    elseif  MyLevel >= 275 and MyLevel <= 299 then
+         mob = "Gladiator [Lv. 275]"
+         questname = "ColosseumQuest"
+         questno = 2
+         MeCFrame =  CFrame.new(-1578.96326, 7.38933659, -2985.26563, 0.929997921, 2.58211976e-08, -0.367564797, -7.48350004e-08, 1, -1.19095183e-07, 0.367564797, 1.3826498e-07, 0.929997921)
+         
+    elseif  MyLevel >= 300 and MyLevel <= 329 then
+         mob = "Military Soldier [Lv. 300]"
+         questname = "MagmaQuest"
+         questno = 1
+         MeCFrame =  CFrame.new(-5314.0874, 12.2364721, 8517.30957, 0.892060339, 3.27445875e-08, 0.451916307, 3.79605902e-09, 1, -7.99504249e-08, -0.451916307, 7.30361052e-08, 0.892060339)
+        
+    elseif  MyLevel >= 330 and MyLevel <= 374 then
+         mob = "Military Spy [Lv. 330]"
+         questname = "MagmaQuest"
+         questno = 2
+         MeCFrame =  CFrame.new(-5314.0874, 12.2364721, 8517.30957, 0.892060339, 3.27445875e-08, 0.451916307, 3.79605902e-09, 1, -7.99504249e-08, -0.451916307, 7.30361052e-08, 0.892060339) 
+    elseif MyLevel >= 375 and MyLevel <= 399 then -- Fishman Warrior
+         Mob = "Fishman Warrior [Lv. 375]"
+         questname = "FishmanQuest"
+         questno = 1
+         MeCFrame = CFrame.new(61122.5625, 18.4716396, 1568.16504, 0.893533468, 3.95251609e-09, 0.448996574, -2.34327455e-08, 1, 3.78297464e-08, -0.448996574, -4.43233645e-08, 0.893533468)
+     elseif MyLevel >= 400 and MyLevel <= 449 then -- Fishman Commando
+          Mob = "Fishman Commando [Lv. 400]"
+          questname = "FishmanQuest"
+          questno = 2
+          MeCFrame = CFrame.new(61122.5625, 18.4716396, 1568.16504, 0.893533468, 3.95251609e-09, 0.448996574, -2.34327455e-08, 1, 3.78297464e-08, -0.448996574, -4.43233645e-08, 0.893533468)
+       elseif MyLevel >= 450 and MyLevel <= 474 then -- God's Guards
+          Mob = "God's Guard [Lv. 450]"
+          questname = "SkyExp1Quest"
+          questno = 1
+          MeCFrame = CFrame.new(-4721.71436, 845.277161, -1954.20105, -0.999277651, -5.56969759e-09, 0.0380011722, -4.14751478e-09, 1, 3.75035256e-08, -0.0380011722, 3.73188307e-08, -0.999277651)
+       elseif MyLevel >= 475 and MyLevel <= 524 then -- Shandas
+          Mob = "Shanda [Lv. 475]"
+          questname = "SkyExp1Quest"
+          questno = 2
+          MeCFrame = CFrame.new(-7863.63672, 5545.49316, -379.826324, 0.362120807, -1.98046344e-08, -0.93213129, 4.05822291e-08, 1, -5.48095125e-09, 0.93213129, -3.58431969e-08, 0.362120807)
+       elseif MyLevel >= 525 and MyLevel <= 549 then -- Royal Squad
+          Mob = "Royal Squad [Lv. 525]"
+          questname = "SkyExp2Quest"
+          questno = 1
+          MeCFrame = CFrame.new(-7902.66895, 5635.96387, -1411.71802, 0.0504222959, 2.5710392e-08, 0.998727977, 1.12541557e-07, 1, -3.14249675e-08, -0.998727977, 1.13982921e-07, 0.0504222959)
+       elseif MyLevel >= 550 and MyLevel <= 624 then -- Royal Soldier
+          Mob = "Royal Soldier [Lv. 550]"
+          questname = "SkyExp2Quest"
+          questno = 2
+          MeCFrame = CFrame.new(-7902.66895, 5635.96387, -1411.71802, 0.0504222959, 2.5710392e-08, 0.998727977, 1.12541557e-07, 1, -3.14249675e-08, -0.998727977, 1.13982921e-07, 0.0504222959)
+       elseif MyLevel >= 625 and MyLevel <= 649 then -- Galley Pirate
+          Mob = "Galley Pirate [Lv. 625]"
+          questname = "FountainQuest"
+          questno = 1
+          MeCFrame = CFrame.new(5254.60156, 38.5011406, 4049.69678, -0.0504891425, -3.62066501e-08, -0.998724639, -9.87921389e-09, 1, -3.57534553e-08, 0.998724639, 8.06145284e-09, -0.0504891425)
+       elseif MyLevel >= 650 then -- Galley Captain
+          Mob = "Galley Captain [Lv. 650]"
+          questname = "FountainQuest"
+          questno = 2
+          MeCFrame = CFrame.new(5254.60156, 38.5011406, 4049.69678, -0.0504891425, -3.62066501e-08, -0.998724639, -9.87921389e-09, 1, -3.57534553e-08, 0.998724639, 8.06145284e-09, -0.0504891425)
+       end
+    end
+    if newworld then
+       if MyLevel >= 700 and MyLevel <= 724 then -- Raider [Lv. 700]
+          Mob = "Raider [Lv. 700]"
+          questname = "Area1Quest"
+          questno = 1
+          MeCFrame = CFrame.new(-424.080078, 73.0055847, 1836.91589, 0.253544956, -1.42165932e-08, 0.967323601, -6.00147771e-08, 1, 3.04272909e-08, -0.967323601, -6.5768397e-08, 0.253544956)
+       elseif MyLevel >= 725 and MyLevel <= 774 then -- Mercenary [Lv. 725]
+          Mob = "Mercenary [Lv. 725]"
+          questname = "Area1Quest"
+          questno = 2
+          MeCFrame = CFrame.new(-424.080078, 73.0055847, 1836.91589, 0.253544956, -1.42165932e-08, 0.967323601, -6.00147771e-08, 1, 3.04272909e-08, -0.967323601, -6.5768397e-08, 0.253544956)
+       elseif MyLevel >= 775 and MyLevel <= 799 then -- Swan Pirate [Lv. 775]
+          Mob = "Swan Pirate [Lv. 775]"
+          questname = "Area2Quest"
+          questno = 1
+          MeCFrame = CFrame.new(632.698608, 73.1055908, 918.666321, -0.0319722369, 8.96074881e-10, -0.999488771, 1.36326533e-10, 1, 8.92172336e-10, 0.999488771, -1.07732087e-10, -0.0319722369)
+       elseif MyLevel >= 800 and MyLevel <= 874 then -- Factory Staff [Lv. 800]
+          Mob = "Factory Staff [Lv. 800]"
+          questname = "Area2Quest"
+          questno = 2
+          MeCFrame = CFrame.new(632.698608, 73.1055908, 918.666321, -0.0319722369, 8.96074881e-10, -0.999488771, 1.36326533e-10, 1, 8.92172336e-10, 0.999488771, -1.07732087e-10, -0.0319722369)
+       elseif MyLevel >= 875 and MyLevel <= 899 then -- Marine Lieutenant [Lv. 875]
+          Mob = "Marine Lieutenant [Lv. 875]"
+          questname = "MarineQuest3"
+          questno = 1
+          MeCFrame = CFrame.new(-2442.65015, 73.0511475, -3219.11523, -0.873540044, 4.2329841e-08, -0.486752301, 5.64383384e-08, 1, -1.43220786e-08, 0.486752301, -3.99823996e-08, -0.873540044)
+       elseif MyLevel >= 900 and MyLevel <= 949 then -- Marine Captain [Lv. 900]
+          Mob = "Marine Captain [Lv. 900]"
+          questname = "MarineQuest3"
+          questno = 2
+          MeCFrame = CFrame.new(-2442.65015, 73.0511475, -3219.11523, -0.873540044, 4.2329841e-08, -0.486752301, 5.64383384e-08, 1, -1.43220786e-08, 0.486752301, -3.99823996e-08, -0.873540044)
+       elseif MyLevel >= 950 and MyLevel <= 974 then -- Zombie [Lv. 950]
+          Mob = "Zombie [Lv. 950]"
+          questname = "ZombieQuest"
+          questno = 1
+          MeCFrame = CFrame.new(-5492.79395, 48.5151672, -793.710571, 0.321800292, -6.24695815e-08, 0.946807742, 4.05616092e-08, 1, 5.21931227e-08, -0.946807742, 2.16082796e-08, 0.321800292)
+       elseif MyLevel >= 975 and MyLevel <= 999 then -- Vampire [Lv. 975]
+          Mob = "Vampire [Lv. 975]"
+          questname = "ZombieQuest"
+          questno = 2
+          MeCFrame = CFrame.new(-5492.79395, 48.5151672, -793.710571, 0.321800292, -6.24695815e-08, 0.946807742, 4.05616092e-08, 1, 5.21931227e-08, -0.946807742, 2.16082796e-08, 0.321800292)
+       elseif MyLevel >= 1000 and MyLevel <= 1049 then -- Snow Trooper [Lv. 1000] **
+          Mob = "Snow Trooper [Lv. 1000]"
+          questname = "SnowMountainQuest"
+          questno = 1
+          MeCFrame = CFrame.new(604.964966, 401.457062, -5371.69287, 0.353063971, 1.89520435e-08, -0.935599446, -5.81846002e-08, 1, -1.70033754e-09, 0.935599446, 5.50377841e-08, 0.353063971)
+       elseif MyLevel >= 1050 and MyLevel <= 1099 then -- Winter Warrior [Lv. 1050]
+          Mob = "Winter Warrior [Lv. 1050]"
+          questname = "SnowMountainQuest"
+          questno = 2
+          MeCFrame = CFrame.new(604.964966, 401.457062, -5371.69287, 0.353063971, 1.89520435e-08, -0.935599446, -5.81846002e-08, 1, -1.70033754e-09, 0.935599446, 5.50377841e-08, 0.353063971)
+       elseif MyLevel >= 1100 and MyLevel <= 1124 then -- Lab Subordinate [Lv. 1100]
+          Mob = "Lab Subordinate [Lv. 1100]"
+          questname = "IceSideQuest"
+          questno = 1
+          MeCFrame = CFrame.new(-6060.10693, 15.9868021, -4904.7876, -0.411000341, -5.06538868e-07, 0.91163528, 1.26306062e-07, 1, 6.12581289e-07, -0.91163528, 3.66916197e-07, -0.411000341)
+       elseif MyLevel >= 1125 and MyLevel <= 1174 then -- Horned Warrior [Lv. 1125]
+          Mob = "Horned Warrior [Lv. 1125]"
+          questname = "IceSideQuest"
+          questno = 2
+          MeCFrame = CFrame.new(-6060.10693, 15.9868021, -4904.7876, -0.411000341, -5.06538868e-07, 0.91163528, 1.26306062e-07, 1, 6.12581289e-07, -0.91163528, 3.66916197e-07, -0.411000341)
+       elseif MyLevel >= 1175 and MyLevel <= 1199 then -- Magma Ninja [Lv. 1175]
+          Mob = "Magma Ninja [Lv. 1175]"
+          questname = "FireSideQuest"
+          questno = 1
+          MeCFrame = CFrame.new(-5431.09473, 15.9868021, -5296.53223, 0.831796765, 1.15322464e-07, -0.555080295, -1.10814341e-07, 1, 4.17010995e-08, 0.555080295, 2.68240168e-08, 0.831796765)
+       elseif MyLevel >= 1200 and MyLevel <= 1249 then -- Lava Pirate [Lv. 1200]
+          Mob = "Lava Pirate [Lv. 1200]"
+          questname = "FireSideQuest"
+          questno = 2
+          MeCFrame = CFrame.new(-5431.09473, 15.9868021, -5296.53223, 0.831796765, 1.15322464e-07, -0.555080295, -1.10814341e-07, 1, 4.17010995e-08, 0.555080295, 2.68240168e-08, 0.831796765)
+       elseif MyLevel >= 1250 and MyLevel <= 1274 then -- Ship Deckhand [Lv. 1250]
+          Mob = "Ship Deckhand [Lv. 1250]"
+          questname = "ShipQuest1"
+          questno = 1
+          MeCFrame = CFrame.new(1037.80127, 125.092171, 32911.6016, -0.244533166, -0, -0.969640911, -0, 1.00000012, -0, 0.96964103, 0, -0.244533136)
+       elseif MyLevel >= 1275 and MyLevel <= 1299 then -- Ship Engineer [Lv. 1275]
+          Mob = "Ship Engineer [Lv. 1275]"
+          questname = "ShipQuest1"
+          questno = 2
+          MeCFrame = CFrame.new(1037.80127, 125.092171, 32911.6016, -0.244533166, -0, -0.969640911, -0, 1.00000012, -0, 0.96964103, 0, -0.244533136)
+       elseif MyLevel >= 1300 and MyLevel <= 1324 then -- Ship Steward [Lv. 1300]
+          Mob = "Ship Steward [Lv. 1300]"
+          questname = "ShipQuest2"
+          questno = 1
+          MeCFrame = CFrame.new(968.80957, 125.092171, 33244.125, -0.869560242, 1.51905191e-08, -0.493826836, 1.44108379e-08, 1, 5.38534195e-09, 0.493826836, -2.43357912e-09, -0.869560242)
+       elseif MyLevel >= 1325 and MyLevel <= 1349 then -- Ship Officer [Lv. 1325]
+          Mob = "Ship Officer [Lv. 1325]"
+          questname = "ShipQuest2"
+          questno = 2
+          MeCFrame = CFrame.new(968.80957, 125.092171, 33244.125, -0.869560242, 1.51905191e-08, -0.493826836, 1.44108379e-08, 1, 5.38534195e-09, 0.493826836, -2.43357912e-09, -0.869560242)
+       elseif MyLevel >= 1350 and MyLevel <= 1374 then -- Arctic Warrior [Lv. 1350]
+          Mob = "Arctic Warrior [Lv. 1350]"
+          questname = "FrostQuest"
+          questno = 1
+          MeCFrame = CFrame.new(5669.43506, 28.2117786, -6482.60107, 0.888092756, 1.02705066e-07, 0.459664226, -6.20391774e-08, 1, -1.03572376e-07, -0.459664226, 6.34646895e-08, 0.888092756)
+       elseif MyLevel >= 1375 and MyLevel <= 1424 then -- Snow Lurker [Lv. 1375]
+          Mob = "Snow Lurker [Lv. 1375]"
+          questname = "FrostQuest"
+          questno = 2
+          MeCFrame = CFrame.new(5669.43506, 28.2117786, -6482.60107, 0.888092756, 1.02705066e-07, 0.459664226, -6.20391774e-08, 1, -1.03572376e-07, -0.459664226, 6.34646895e-08, 0.888092756)
+        elseif MyLevel >= 1425 and MyLevel <= 1449 then -- Sea Soldier [Lv. 1425]
+           Mob = "Sea Soldier [Lv. 1425]"
+           questname = "ForgottenQuest"
+           questno = 1
+           MeCFrame = CFrame.new(-3052.99097, 236.881363, -10148.1943, -0.997911751, 4.42321983e-08, 0.064591676, 4.90968759e-08, 1, 7.37270085e-08, -0.064591676, 7.67442998e-08, -0.997911751)
+        elseif MyLevel >= 1450 then -- Water Fighter [Lv. 1450]
+           Mob = "Water Fighter [Lv. 1450]"
+           questname = "ForgottenQuest"
+           questno = 2
+           MeCFrame = CFrame.new(-3052.99097, 236.881363, -10148.1943, -0.997911751, 4.42321983e-08, 0.064591676, 4.90968759e-08, 1, 7.37270085e-08, -0.064591676, 7.67442998e-08, -0.997911751)
+ end   
+end   
+end
