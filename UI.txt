@@ -509,10 +509,8 @@ function Flux:Window(text, bottom,mainclr,toclose)
 			end
 		end)
 		local ContainerContent = {}
-		function ContainerContent:Button(text, desc, callback)
-			if desc == "" then
-				desc = "There is no description for this button."
-			end
+		function ContainerContent:Button(text, callback)
+			
 			local BtnDescToggled = false
 			local Button = Instance.new("TextButton")
 			local ButtonCorner = Instance.new("UICorner")
