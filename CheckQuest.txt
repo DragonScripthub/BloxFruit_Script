@@ -93,45 +93,6 @@ function CheckQuest()
                 questname = "MagmaQuest"
                 questno = 2
                 MeCFrame =  CFrame.new(-5314.0874, 12.2364721, 8517.30957, 0.892060339, 3.27445875e-08, 0.451916307, 3.79605902e-09, 1, -7.99504249e-08, -0.451916307, 7.30361052e-08, 0.892060339) 
-           elseif MyLevel >= 375 and MyLevel <= 399 then -- Fishman Warrior
-                Mob = "Fishman Warrior [Lv. 375]"
-                questname = "FishmanQuest"
-                questno = 1
-                MeCFrame = CFrame.new(61122.5625, 18.4716396, 1568.16504, 0.893533468, 3.95251609e-09, 0.448996574, -2.34327455e-08, 1, 3.78297464e-08, -0.448996574, -4.43233645e-08, 0.893533468)
-            elseif MyLevel >= 400 and MyLevel <= 449 then -- Fishman Commando
-                 Mob = "Fishman Commando [Lv. 400]"
-                 questname = "FishmanQuest"
-                 questno = 2
-                 MeCFrame = CFrame.new(61122.5625, 18.4716396, 1568.16504, 0.893533468, 3.95251609e-09, 0.448996574, -2.34327455e-08, 1, 3.78297464e-08, -0.448996574, -4.43233645e-08, 0.893533468)
-              elseif MyLevel >= 450 and MyLevel <= 474 then -- God's Guards
-                 Mob = "God's Guard [Lv. 450]"
-                 questname = "SkyExp1Quest"
-                 questno = 1
-                 MeCFrame = CFrame.new(-4721.71436, 845.277161, -1954.20105, -0.999277651, -5.56969759e-09, 0.0380011722, -4.14751478e-09, 1, 3.75035256e-08, -0.0380011722, 3.73188307e-08, -0.999277651)
-              elseif MyLevel >= 475 and MyLevel <= 524 then -- Shandas
-                 Mob = "Shanda [Lv. 475]"
-                 questname = "SkyExp1Quest"
-                 questno = 2
-                 MeCFrame = CFrame.new(-7863.63672, 5545.49316, -379.826324, 0.362120807, -1.98046344e-08, -0.93213129, 4.05822291e-08, 1, -5.48095125e-09, 0.93213129, -3.58431969e-08, 0.362120807)
-              elseif MyLevel >= 525 and MyLevel <= 549 then -- Royal Squad
-                 Mob = "Royal Squad [Lv. 525]"
-                 questname = "SkyExp2Quest"
-                 questno = 1
-                 MeCFrame = CFrame.new(-7902.66895, 5635.96387, -1411.71802, 0.0504222959, 2.5710392e-08, 0.998727977, 1.12541557e-07, 1, -3.14249675e-08, -0.998727977, 1.13982921e-07, 0.0504222959)
-              elseif MyLevel >= 550 and MyLevel <= 624 then -- Royal Soldier
-                 Mob = "Royal Soldier [Lv. 550]"
-                 questname = "SkyExp2Quest"
-                 questno = 2
-                 MeCFrame = CFrame.new(-7902.66895, 5635.96387, -1411.71802, 0.0504222959, 2.5710392e-08, 0.998727977, 1.12541557e-07, 1, -3.14249675e-08, -0.998727977, 1.13982921e-07, 0.0504222959)
-              elseif MyLevel >= 625 and MyLevel <= 649 then -- Galley Pirate
-                 Mob = "Galley Pirate [Lv. 625]"
-                 questname = "FountainQuest"
-                 questno = 1
-                 MeCFrame = CFrame.new(5254.60156, 38.5011406, 4049.69678, -0.0504891425, -3.62066501e-08, -0.998724639, -9.87921389e-09, 1, -3.57534553e-08, 0.998724639, 8.06145284e-09, -0.0504891425)
-              elseif MyLevel >= 650 then -- Galley Captain
-                 Mob = "Galley Captain [Lv. 650]"
-                 questname = "FountainQuest"
-                 questno = 2
-                 MeCFrame = CFrame.new(5254.60156, 38.5011406, 4049.69678, -0.0504891425, -3.62066501e-08, -0.998724639, -9.87921389e-09, 1, -3.57534553e-08, 0.998724639, 8.06145284e-09, -0.0504891425)  
-    end   
+      end
+      end
 
