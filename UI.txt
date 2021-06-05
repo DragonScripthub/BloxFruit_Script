@@ -545,11 +545,15 @@ function Flux:Window(text, bottom,mainclr,toclose)
 				):Play()
 			end)
 			
-			Button.MouseButton1Click:Connect(function()
-				pcall(callback)
-			end)
-			
-			end
+			  Button.MouseLeave:Connect(
+			   function()
+			      TweenService:Create(
+				 Button,
+				 TweenInfo.new(.2, Enum.EasingStyle.Quad),
+				 {BackgroundColor3 = Color3.fromRGB(35, 35, 35)}
+			      ):Play()
+			   end)
+			   Container.CanvasSize = UDim2.new(0, 0, 0, ContainerLayout.AbsoluteContentSize.Y)
 		function ContainerContent:Toggle(text, desc,default, callback)
 			local ToggleDescToggled = false
 			local Toggled = false
