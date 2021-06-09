@@ -26,7 +26,7 @@ function CheckQuest()
          mob = "Pirate [Lv. 35]"
          NaemQuest = "BuggyQuest1"
          LevelQuest = 1
-         NameMon = "Pirate"
+         NameMon = "Pirates"
          CFrameQuest = CFrame.new(-1139.59717, 4.75205183, 3825.16211, -0.959730506, -7.5857054e-09, 0.280922383, -4.06310328e-08, 1, -1.11807175e-07, -0.280922383, -1.18718916e-07, -0.959730506)
          CFrameMon = CFrame.new(-1219.32324, 4.75205183, 3915.63452, -0.966492832, -6.91238853e-08, 0.25669381, -5.21195496e-08, 1, 7.3047012e-08, -0.25669381, 5.72206496e-08, -0.966492832)
         elseif MyLevel == 40 or MyLevel <= 59 then -- Brute
