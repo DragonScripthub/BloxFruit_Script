@@ -16,11 +16,6 @@ tab1:Toggle("AutoFarm Level", false, function(t)
       Magnet = false
     end
 end) 
-tab1:Toggle("bring", true, function(t)
-    bring = t
-    if t == false then
-    end
-end) 
 if placeId == 2753915549 then
    OldWorld = true
 elseif placeId == 4442272183 then
@@ -70,7 +65,7 @@ end
 spawn(function()
     local LocalPlayer = game:GetService("Players").LocalPlayer
     while wait(.1) do
-          if AutoFarm and Magnet and bring  then
+          if AutoFarm and Magnet then
              CheckQuest()
              pcall(function()
                       repeat wait(.1)
