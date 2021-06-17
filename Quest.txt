@@ -6,99 +6,99 @@ function CheckQuest()
          NaemQuest = "BanditQuest1"
          LevelQuest = 1
          NameMon = "Bandit"
-         CFrameQuest = CFrame.new(1061.66699, 16.5166187, 1544.52905, -0.942978859, -3.33851502e-09, 0.332852632, 7.04340497e-09, 1, 2.99841325e-08, -0.332852632, 3.06188177e-08, -0.942978859)
-         CFrameMon = CFrame.new(1199.31287, 52.2717781, 1536.91516, -0.929782331, 6.60215846e-08, -0.368109822, 3.9077392e-08, 1, 8.06501603e-08, 0.368109822, 6.06023249e-08, -0.929782331)
+         CFrameQuest = CFrame.new(1061.66699, 16.5166187, 1544.52905)
+         CFrameMon = CFrame.new(1036.44568, 80.3649979, 1596.28613)
       elseif MyLevel == 10 or MyLevel <= 14 then -- Monkey
          mob = "Monkey [Lv. 14]"
          NaemQuest = "JungleQuest"
          LevelQuest = 1
          NameMon = "Monkey"
-         CFrameQuest = CFrame.new(-1604.12012, 36.8521118, 154.23732, 0.0648873374, -4.70858913e-06, -0.997892559, 1.41431883e-07, 1, -4.70933674e-06, 0.997892559, 1.64442184e-07, 0.0648873374)
-         CFrameMon = CFrame.new(-1402.74609, 98.5633316, 90.6417007, 0.836947978, 0, 0.547282517, -0, 1, -0, -0.547282517, 0, 0.836947978)
+         CFrameQuest = CFrame.new(-1604.12012, 36.8521118, 154.23732)
+         CFrameMon = CFrame.new(-1574.43799, 35.0938759, 100.180153)
       elseif MyLevel == 15 or MyLevel <= 29 then -- Gorilla
          mob = "Gorilla [Lv. 20]"
          NaemQuest = "JungleQuest"
          LevelQuest = 2
          NameMon = "Gorilla"
-         CFrameQuest = CFrame.new(-1604.12012, 36.8521118, 154.23732, 0.0648873374, -4.70858913e-06, -0.997892559, 1.41431883e-07, 1, -4.70933674e-06, 0.997892559, 1.64442184e-07, 0.0648873374)
-         CFrameMon = CFrame.new(-1223.52808, 6.27936459, -502.292664, 0.310949147, -5.66602516e-08, 0.950426519, -3.37275488e-08, 1, 7.06501808e-08, -0.950426519, -5.40241736e-08, 0.310949147)
+         CFrameQuest = CFrame.new(-1604.12012, 36.8521118, 154.23732)
+         CFrameMon = CFrame.new(-1264.66907, 18.6214275, -390.335632)
         elseif MyLevel == 30 or MyLevel <= 39 then -- Pirate
          mob = "Pirate [Lv. 35]"
          NaemQuest = "BuggyQuest1"
          LevelQuest = 1
          NameMon = "Pirates"
-         CFrameQuest = CFrame.new(-1139.59717, 4.75205183, 3825.16211, -0.959730506, -7.5857054e-09, 0.280922383, -4.06310328e-08, 1, -1.11807175e-07, -0.280922383, -1.18718916e-07, -0.959730506)
-         CFrameMon = CFrame.new(-1219.32324, 4.75205183, 3915.63452, -0.966492832, -6.91238853e-08, 0.25669381, -5.21195496e-08, 1, 7.3047012e-08, -0.25669381, 5.72206496e-08, -0.966492832)
+         CFrameQuest = CFrame.new(-1139.59717, 4.75205183, 3825.16211)
+         CFrameMon = CFrame.new(-1219.32324, 4.75205183, 3915.63452)
         elseif MyLevel == 40 or MyLevel <= 59 then -- Brute
          mob = "Brute [Lv. 45]"
          NaemQuest = "BuggyQuest1"
          LevelQuest = 2
          NameMon = "Brute"
-         CFrameQuest = CFrame.new(-1139.59717, 4.75205183, 3825.16211, -0.959730506, -7.5857054e-09, 0.280922383, -4.06310328e-08, 1, -1.11807175e-07, -0.280922383, -1.18718916e-07, -0.959730506)
-         CFrameMon = CFrame.new(-1146.49646, 96.0936813, 4312.1333, -0.978175163, -1.53222057e-08, 0.207781896, -3.33316912e-08, 1, -8.31738873e-08, -0.207781896, -8.82843523e-08, -0.978175163)
+         CFrameQuest = CFrame.new(-1139.59717, 4.75205183, 3825.16211)
+         CFrameMon = CFrame.new(-1153.15039, 65.201149, 4171.81201)
         elseif MyLevel == 60 or MyLevel <= 74 then -- Desert Bandit
          mob = "Desert Bandit [Lv. 60]"
          NaemQuest = "DesertQuest"
          LevelQuest = 1
          NameMon = "Desert Bandit"
-         CFrameQuest = CFrame.new(897.031128, 6.43846416, 4388.97168, -0.804044724, 3.68233266e-08, 0.594568789, 6.97835176e-08, 1, 3.24365246e-08, -0.594568789, 6.75715199e-08, -0.804044724)
-         CFrameMon = CFrame.new(932.788818, 6.4503746, 4488.24609, -0.998625934, 3.08948351e-08, 0.0524050146, 2.79967303e-08, 1, -5.60361286e-08, -0.0524050146, -5.44919629e-08, -0.998625934)
+         CFrameQuest = CFrame.new(897.031128, 6.43846416, 4388.97168)
+         CFrameMon = CFrame.new(932.788818, 6.4503746, 4488.24609)
         elseif MyLevel == 75 or MyLevel <= 89 then -- Desert Officre
          mob = "Desert Officer [Lv. 70]"
          NaemQuest = "DesertQuest"
          LevelQuest = 2
          NameMon = "Desert Officer"
-         CFrameQuest = CFrame.new(897.031128, 6.43846416, 4388.97168, -0.804044724, 3.68233266e-08, 0.594568789, 6.97835176e-08, 1, 3.24365246e-08, -0.594568789, 6.75715199e-08, -0.804044724)
-         CFrameMon = CFrame.new(1580.03198, 4.61375761, 4366.86426, 0.135744005, -6.44280718e-08, -0.990743816, 4.35738308e-08, 1, -5.90598574e-08, 0.990743816, -3.51534837e-08, 0.135744005)
+         CFrameQuest = CFrame.new(897.031128, 6.43846416, 4388.97168)
+         CFrameMon = CFrame.new(1580.03198, 4.61375761, 4366.86426)
         elseif MyLevel == 90 or MyLevel <= 99 then -- Snow Bandits
            mob = "Snow Bandit [Lv. 90]"
            NaemQuest = "SnowQuest"
            LevelQuest = 1
            NameMon = "Snow Bandits"
-           CFrameQuest = CFrame.new(1384.14001, 87.272789, -1297.06482, 0.348555952, -2.53947841e-09, -0.937287986, 1.49860568e-08, 1, 2.86358204e-09, 0.937287986, -1.50443711e-08, 0.348555952)
-           CFrameMon = CFrame.new(1370.24316, 102.403511, -1411.52905, 0.980274439, -1.12995728e-08, 0.197641045, -9.57343449e-09, 1, 1.04655214e-07, -0.197641045, -1.04482936e-07, 0.980274439)
+           CFrameQuest = CFrame.new(1384.14001, 87.272789, -1297.06482)
+           CFrameMon = CFrame.new(1305.55615, 105.780411, -1444.05188)
         elseif MyLevel == 100 or MyLevel <= 119 then -- Snowman
            mob = "Snowman [Lv. 100]"
            NaemQuest = "SnowQuest"
            LevelQuest = 2
            NameMon = "Snowman"
-           CFrameQuest = CFrame.new(1384.14001, 87.272789, -1297.06482, 0.348555952, -2.53947841e-09, -0.937287986, 1.49860568e-08, 1, 2.86358204e-09, 0.937287986, -1.50443711e-08, 0.348555952)
-           CFrameMon = CFrame.new(1370.24316, 102.403511, -1411.52905, 0.980274439, -1.12995728e-08, 0.197641045, -9.57343449e-09, 1, 1.04655214e-07, -0.197641045, -1.04482936e-07, 0.980274439)
+           CFrameQuest = CFrame.new(1384.14001, 87.272789, -1297.06482)
+           CFrameMon = CFrame.new(1305.55615, 105.780411, -1444.05188)
         elseif MyLevel == 120 or MyLevel <= 149 then -- Chief Petty Officer
            mob = "Chief Petty Officer [Lv. 120]"
            NaemQuest = "MarineQuest2"
            LevelQuest = 1
            NameMon = "Chief Petty Officer"
-           CFrameQuest = CFrame.new(-5035.0835, 28.6520386, 4325.29443, 0.0243340395, -7.08064647e-08, 0.999703884, -6.36926814e-08, 1, 7.23777944e-08, -0.999703884, -6.54350671e-08, 0.0243340395)
-           CFrameMon = CFrame.new(-4882.8623, 22.6520386, 4255.53516, 0.273695946, -5.40380647e-08, -0.96181643, 4.37720793e-08, 1, -4.37274998e-08, 0.96181643, -3.01326679e-08, 0.273695946)
+           CFrameQuest = CFrame.new(-5035.0835, 28.6520386, 4325.29443)
+           CFrameMon = CFrame.new(-4874.70703, 22.6520348, 4282.4668)
         elseif MyLevel == 150 or MyLevel <= 174 then -- Sky Bandit
            mob = "Sky Bandit [Lv. 150]"
            NaemQuest = "SkyQuest"
            LevelQuest = 1
            NameMon = "Sky Bandit"
-           CFrameQuest = CFrame.new(-4841.83447, 717.669617, -2623.96436, -0.875942111, 5.59710216e-08, -0.482416272, 3.04023082e-08, 1, 6.08195947e-08, 0.482416272, 3.86078725e-08, -0.875942111)
-           CFrameMon = CFrame.new(-4970.74219, 294.544342, -2890.11353, -0.994874597, -8.61311236e-08, -0.101116329, -9.10836206e-08, 1, 4.43614923e-08, 0.101116329, 5.33441664e-08, -0.994874597)
+           CFrameQuest = CFrame.new(-4841.83447, 717.669617, -2623.96436)
+           CFrameMon = CFrame.new(-4970.74219, 294.544342, -2890.11353)
         elseif MyLevel == 175 or MyLevel <= 224 then -- Dark Master
            mob = "Dark Master [Lv. 175]"
            NaemQuest = "SkyQuest"
            LevelQuest = 2
            NameMon = "Dark Master"
-           CFrameQuest = CFrame.new(-4841.83447, 717.669617, -2623.96436, -0.875942111, 5.59710216e-08, -0.482416272, 3.04023082e-08, 1, 6.08195947e-08, 0.482416272, 3.86078725e-08, -0.875942111)
-           CFrameMon = CFrame.new(-5220.58594, 430.693298, -2278.17456, -0.925375521, 1.12086873e-08, 0.379051805, -1.05115507e-08, 1, -5.52320891e-08, -0.379051805, -5.50948407e-08, -0.925375521)
+           CFrameQuest = CFrame.new(-4841.83447, 717.669617, -2623.96436)
+           CFrameMon = CFrame.new(-5223.31836, 429.954285, -2280.52173)
         elseif MyLevel == 225 or MyLevel <= 274 then -- Toga Warrior
            mob = "Toga Warrior [Lv. 225]"
            NaemQuest = "ColosseumQuest"
            LevelQuest = 1
            NameMon = "Toga Warrior"
-           CFrameQuest = CFrame.new(-1576.11743, 7.38933945, -2983.30762, 0.576966345, 1.22114863e-09, 0.816767931, -3.58496594e-10, 1, -1.24185606e-09, -0.816767931, 4.2370063e-10, 0.576966345)
-           CFrameMon = CFrame.new(-1779.97583, 44.6077499, -2736.35474, 0.984437346, 4.10396339e-08, 0.175734788, -3.62286876e-08, 1, -3.05844168e-08, -0.175734788, 2.3741821e-08, 0.984437346)
+           CFrameQuest = CFrame.new(-1576.11743, 7.38933945, -2983.30762)
+           CFrameMon = CFrame.new(-1857.89587, 7.28907108, -2776.0896)
         elseif MyLevel == 275 or MyLevel <= 299 then -- Gladiato
            mob = "Gladiator [Lv. 275]"
            NaemQuest = "ColosseumQuest"
            LevelQuest = 2
            NameMon = "Gladiato"
-           CFrameQuest = CFrame.new(-1576.11743, 7.38933945, -2983.30762, 0.576966345, 1.22114863e-09, 0.816767931, -3.58496594e-10, 1, -1.24185606e-09, -0.816767931, 4.2370063e-10, 0.576966345)
-           CFrameMon = CFrame.new(-1274.75903, 58.1895943, -3188.16309, 0.464524001, 6.21005611e-08, 0.885560572, -4.80449414e-09, 1, -6.76054768e-08, -0.885560572, 2.71497012e-08, 0.464524001)
+           CFrameQuest = CFrame.new(-1576.11743, 7.38933945, -2983.30762)
+           CFrameMon = CFrame.new(-1387.84277, 7.44254398, -3165.97461)
         elseif MyLevel == 300 or MyLevel <= 329 then -- Military Soldier
            mob = "Military Soldier [Lv. 300]"
            NaemQuest = "MagmaQuest"
