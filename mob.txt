@@ -26,7 +26,36 @@ local moblist = {
        Telemon = CFrame.new(-1574.43799, 35.0938759, 100.180153)
        elseif SelectMob == moblist[3] then
        Telemon = CFrame.new(-1264.66907, 18.6214275, -390.335632)
-       
+       elseif SelectMob == moblist[4] then
+       Telemon = CFrame.new(-1219.32324, 4.75205183, 3915.63452)
+       elseif SelectMob == moblist[5] then
+       Telemon = CFrame.new(-1153.15039, 65.201149, 4171.81201)
+       elseif SelectMob == moblist[6] then
+       Telemon = CFrame.new(932.788818, 6.4503746, 4488.24609)
+       elseif SelectMob == moblist[7] then
+       Telemon = CFrame.new(1580.03198, 4.61375761, 4366.86426)
+       elseif SelectMob == moblist[8] then
+       Telemon = CFrame.new(1305.55615, 105.780411, -1444.05188)
+       elseif SelectMob == moblist[9] then
+       Telemon = CFrame.new(1305.55615, 105.780411, -1444.05188)
+       elseif SelectMob == moblist[10] then
+       Telemon = CFrame.new(-4874.70703, 22.6520348, 4282.4668)
+       elseif SelectMob == moblist[11] then
+       Telemon = CFrame.new(-4970.74219, 294.544342, -2890.11353)
+       elseif SelectMob == moblist[12] then
+       Telemon = CFrame.new(-1901.35791, 49.054409, -2905.64648)
+       elseif SelectMob == moblist[13] then
+       Telemon = CFrame.new(-1387.84277, 7.44254398, -3165.97461)
+       elseif SelectMob == moblist[14] then
+       Telemon = CFrame.new(-5314.72217, 51.9536018, 8501.80859)
+       elseif SelectMob == moblist[15] then
+       Telemon = CFrame.new(-5787.99023, 120.864456, 8762.25293)
+       elseif SelectMob == moblist[16] then
+       Telemon = CFrame.new(-4627.86816, 866.902954, -1939.93774)
+       elseif SelectMob == moblist[17] then
+       Telemon = CFrame.new(-7682.63232, 5566.97803, -498.123901)
+       elseif SelectMob == moblist[18] then
+       Telemon = CFrame.new(5595.06982, 41.5013695, 3961.47095)
       end
   end
   end
