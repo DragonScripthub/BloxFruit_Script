@@ -1,12 +1,30 @@
-
-  
+local moblist = {
+	"Bandit [Lv. 5]",
+	"Monkey [Lv. 14]", 
+	"Gorilla [Lv. 20]",
+	"Pirate [Lv. 35]", 
+	"Brute [Lv. 45]", 
+	"Desert Bandit [Lv. 60]", 
+	"Desert Officer [Lv. 70]", 
+	"Snow Bandit [Lv. 90]", 
+	"Snowman [Lv. 100]",
+	"Chief Petty Officer [Lv. 120]" ,
+	"Sky Bandit [Lv. 150]", 
+	"Toga Warrior [Lv. 225]", 
+	"Gladiator [Lv. 275]", 
+	"Military Soldier [Lv. 300]", 
+	"Military Spy [Lv. 330]", 
+	"God's Guard [Lv. 450]",
+	"Shanda [Lv. 475]", 
+	"Galley Pirate [Lv. 625]"
+}
   function CheckMob()
   if OldWorld then
-     if SelectMob == "Bandit [Lv. 5]" then
+     if SelectMob == moblist[1] then
       Telemon = CFrame.new(1036.44568, 80.3649979, 1596.28613)
-      elseif SelectMob == "Monkey [Lv. 14]" then
+      elseif SelectMob == moblist[2] then
        Telemon = CFrame.new(-1574.43799, 35.0938759, 100.180153)
-       elseif SelectMob == "Gorilla [Lv. 20]" then
+       elseif SelectMob == moblist[3] then
        Telemon = CFrame.new(-1264.66907, 18.6214275, -390.335632)
        
       end
