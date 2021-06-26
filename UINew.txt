@@ -2284,6 +2284,7 @@ function DiscordLib:Window(text)
 							TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 							{BackgroundColor3 = Color3.fromRGB(114, 118, 125)}
 						):Play()
+						pcall(callback, Toggled)
 						ToggleFrameCircle:TweenPosition(UDim2.new(0.234999999, -5, 0.133000001, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
 						TweenService:Create(
 							Icon,
