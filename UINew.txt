@@ -86,6 +86,21 @@ Discord.Name = "Discord"
 Discord.Parent = game.CoreGui
 Discord.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
+  local uitoggled = false
+  UserInputService.InputBegan:Connect(
+   function(io, p)
+      if io.KeyCode == Enum.KeyCode.RightControl then
+         if uitoggled == false then
+            Discord.Enabled = false
+            uitoggled = true
+         else
+            Discord.Enabled = true
+            uitoggled = false
+         end
+      end
+   end
+  )
+  
 function DiscordLib:Window(text)
 	local currentservertoggled = ""
 	local minimized = false
@@ -3226,7 +3241,7 @@ function DiscordLib:Window(text)
 				end)
 				
 				game:GetService("UserInputService").InputBegan:connect(
-				function(pressed)
+				function(current,pressed)
 					if not pressed then
 						if current.KeyCode.Name == Key then
 							pcall(callback)
