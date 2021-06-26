@@ -98,8 +98,7 @@ Discord.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
             uitoggled = false
          end
       end
-   end
-  )
+   end)
   
 function DiscordLib:Window(text)
 	local currentservertoggled = ""
@@ -2185,8 +2184,8 @@ function DiscordLib:Window(text)
 				end)
 				ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
 			end
-			function ChannelContent:Toggle(text,default,callback)
-				local toggled = default
+			function ChannelContent:Toggle(text,Default,callback)
+				local toggled = Default
 				local Toggle = Instance.new("TextButton")
 				local ToggleTitle = Instance.new("TextLabel")
 				local ToggleFrame = Instance.new("Frame")
