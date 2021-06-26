@@ -2185,7 +2185,7 @@ function DiscordLib:Window(text)
 				ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
 			end
 			function ChannelContent:Toggle(text,Default,callback)
-				local toggled = Default
+				local toggled = Default or false
 				local Toggle = Instance.new("TextButton")
 				local ToggleTitle = Instance.new("TextLabel")
 				local ToggleFrame = Instance.new("Frame")
@@ -2249,62 +2249,91 @@ function DiscordLib:Window(text)
 				Icon.Image = "http://www.roblox.com/asset/?id=6035047409"
 				Icon.ImageColor3 = Color3.fromRGB(114, 118, 125)
 				Toggle.MouseButton1Click:Connect(function()
-					if toggled == false then
-						TweenService:Create(
-							Icon,
-							TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-							{ImageColor3 = Color3.fromRGB(67,181,129)}
-						):Play()
-						TweenService:Create(
-							ToggleFrame,
-							TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-							{BackgroundColor3 = Color3.fromRGB(67,181,129)}
-						):Play()
-						ToggleFrameCircle:TweenPosition(UDim2.new(0.655, -5, 0.133000001, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
-						TweenService:Create(
-							Icon,
-							TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-							{ImageTransparency = 1}
-						):Play()
-						Icon.Image = "http://www.roblox.com/asset/?id=6023426926"
-						wait(.1)
-						TweenService:Create(
-							Icon,
-							TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-							{ImageTransparency = 0}
-						):Play()
-					else
-						TweenService:Create(
-							Icon,
-							TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-							{ImageColor3 = Color3.fromRGB(114, 118, 125)}
-						):Play()
-						TweenService:Create(
-							ToggleFrame,
-							TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-							{BackgroundColor3 = Color3.fromRGB(114, 118, 125)}
-						):Play()
-						pcall(callback, Toggled)
-						ToggleFrameCircle:TweenPosition(UDim2.new(0.234999999, -5, 0.133000001, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
-						TweenService:Create(
-							Icon,
-							TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-							{ImageTransparency = 1}
-						):Play()
-						Icon.Image = "http://www.roblox.com/asset/?id=6035047409"
-						wait(.1)
-						TweenService:Create(
-							Icon,
-							TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-							{ImageTransparency = 0}
-						):Play()
-					end
-					toggled = not toggled
-					pcall(callback, toggled)
-				end)
-				
-				ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
-			end
+					Toggle.MouseEnter:Connect(
+            function()
+               TweenService:Create(
+                  Toggle,
+                  TweenInfo.new(.2, Enum.EasingStyle.Quad),
+                  {BackgroundColor3 = Color3.fromRGB(205, 220, 236)}
+               ):Play()
+  
+            end
+         )
+         Toggle.MouseLeave:Connect(
+            function()
+               TweenService:Create(
+                  Toggle,
+                  TweenInfo.new(.2, Enum.EasingStyle.Quad),
+                  {BackgroundColor3 = Color3.fromRGB(205, 220, 236)}
+               ):Play()
+            end
+         )
+  
+         if Toggled == true then
+          UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(160, 207, 236)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))}
+  
+          TweenService:Create(
+             ToggleFrameRainbow,
+             TweenInfo.new(.2, Enum.EasingStyle.Quad),
+             {BackgroundTransparency = 0}
+          ):Play()
+          TweenService:Create(
+             ToggleDot,
+             TweenInfo.new(.2, Enum.EasingStyle.Quad),
+             {Position = UDim2.new(0.595, -3, 0.289000005, -4)}
+          ):Play()
+          pcall(callback, Toggled)
+       else
+          ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(46, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(228, 92, 255))}
+  
+          TweenService:Create(
+             ToggleFrameRainbow,
+             TweenInfo.new(.2, Enum.EasingStyle.Quad),
+             {BackgroundTransparency = 1}
+          ):Play()
+          TweenService:Create(
+             ToggleDot,
+             TweenInfo.new(.2, Enum.EasingStyle.Quad),
+             {Position = UDim2.new(0.104999997, -3, 0.289000005, -4)}
+          ):Play()
+       end
+  
+         Toggle.MouseButton1Click:Connect(
+            function()
+               if Toggled == false then
+                  UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(160, 207, 236)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(102, 152, 255))}
+  
+                  TweenService:Create(
+                     ToggleFrameRainbow,
+                     TweenInfo.new(.2, Enum.EasingStyle.Quad),
+                     {BackgroundTransparency = 0}
+                  ):Play()
+                  TweenService:Create(
+                     ToggleDot,
+                     TweenInfo.new(.2, Enum.EasingStyle.Quad),
+                     {Position = UDim2.new(0.595, -3, 0.289000005, -4)}
+                  ):Play()
+               else
+                  UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(160, 207, 236)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(102, 152, 255))}
+  
+                  TweenService:Create(
+                     ToggleFrameRainbow,
+                     TweenInfo.new(.2, Enum.EasingStyle.Quad),
+                     {BackgroundTransparency = 1}
+                  ):Play()
+                  TweenService:Create(
+                     ToggleDot,
+                     TweenInfo.new(.2, Enum.EasingStyle.Quad),
+                     {Position = UDim2.new(0.104999997, -3, 0.289000005, -4)}
+                  ):Play()
+               end
+               Toggled = not Toggled
+               pcall(callback, Toggled)
+            end
+         )
+  
+         Container.CanvasSize = UDim2.new(0, 0, 0, ContainerLayout.AbsoluteContentSize.Y)
+      end
 			
 			function ChannelContent:Slider(text, min, max, start, callback)
 				local SliderFunc = {}
