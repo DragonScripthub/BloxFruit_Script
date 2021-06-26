@@ -2171,7 +2171,8 @@ function DiscordLib:Window(text)
 				ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
 			end
 			function ChannelContent:Toggle(text,default,callback)
-				local toggled = default
+				local toggled = default or false
+				local ValueToggle = ValueTogglea or false
 				local Toggle = Instance.new("TextButton")
 				local ToggleTitle = Instance.new("TextLabel")
 				local ToggleFrame = Instance.new("Frame")
@@ -2234,7 +2235,34 @@ function DiscordLib:Window(text)
 				Icon.Size = UDim2.new(0, 13, 0, 13)
 				Icon.Image = "http://www.roblox.com/asset/?id=6035047409"
 				Icon.ImageColor3 = Color3.fromRGB(114, 118, 125)
-				
+				    UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(160, 207, 236)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(102, 152, 255))}
+         UIGradient_2.Parent = ToggleDot
+  
+         ToggleDotCorner.CornerRadius = UDim.new(1, 0)
+         ToggleDotCorner.Name = "ToggleDotCorner"
+         ToggleDotCorner.Parent = ToggleDot
+  
+         Toggle.MouseEnter:Connect(
+            function()
+               TweenService:Create(
+                  Toggle,
+                  TweenInfo.new(.2, Enum.EasingStyle.Quad),
+                  {BackgroundColor3 = Color3.fromRGB(205, 220, 236)}
+               ):Play()
+  
+            end
+         )
+         Toggle.MouseLeave:Connect(
+            function()
+               TweenService:Create(
+                  Toggle,
+                  TweenInfo.new(.2, Enum.EasingStyle.Quad),
+                  {BackgroundColor3 = Color3.fromRGB(205, 220, 236)}
+               ):Play()
+            end
+         )
+	 
+	 
 				Toggle.MouseButton1Click:Connect(function()
 					if toggled == false then
 						TweenService:Create(
