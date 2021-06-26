@@ -3192,6 +3192,7 @@ function DiscordLib:Window(text)
 				local LabelTitle = Instance.new("TextLabel")
 				local labelfunc = {}
 				Label.Name = "Label"
+				
 				Label.Parent = ChannelHolder
 				Label.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
 				Label.BorderSizePixel = 0
@@ -3211,16 +3212,15 @@ function DiscordLib:Window(text)
 				LabelTitle.Size = UDim2.new(0, 200, 0, 30)
 				LabelTitle.Font = Enum.Font.Gotham
 				LabelTitle.Text = text
-				LabelTitle.TextColor3 = Color3.fromRGB(127, 131, 137)
+				LabelTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 				LabelTitle.TextSize = 14.000
 				LabelTitle.TextXAlignment = Enum.TextXAlignment.Left
 				
 				ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
 				function labelfunc:Refresh(tochange)
-          			Label.Text = tochange
-        			end
-  
-         return labelfunc
+			        Label.Text = tochange
+			        end
+			        return labelfunc
 			end
 			
 			function ChannelContent:Bind(text, presetbind, callback)
