@@ -3218,14 +3218,15 @@ function DiscordLib:Window(text)
 				Keybind.MouseButton1Click:Connect(function()
 					KeybindText.Text = "..."
 					local inputwait = game:GetService("UserInputService").InputBegan:wait()
-					
+						if inputwait.KeyCode.Name ~= "Unknown" then
 						KeybindText.Text = inputwait.KeyCode.Name
 						Key = inputwait.KeyCode.Name
+					end
 					
 				end)
 				
 				game:GetService("UserInputService").InputBegan:connect(
-				function(current, pressed)
+				function(pressed)
 					if not pressed then
 						if current.KeyCode.Name == Key then
 							pcall(callback)
