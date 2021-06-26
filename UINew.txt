@@ -2275,10 +2275,11 @@ function DiscordLib:Window(text)
                   TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
                   {ImageTransparency = 0}
                ):Play()
+               pcall(callback, toggled)
 					end
 			
 				Toggle.MouseButton1Click:Connect(function()
-					if toggled == true then
+					if toggled == false then
 						TweenService:Create(
 							Icon,
 							TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
@@ -2302,7 +2303,6 @@ function DiscordLib:Window(text)
 							TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 							{ImageTransparency = 0}
 						):Play()
-                  pcall(callback, toggled)
 						else
 				TweenService:Create(
 							Icon,
