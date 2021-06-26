@@ -2302,6 +2302,7 @@ function DiscordLib:Window(text)
 							TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 							{ImageTransparency = 0}
 						):Play()
+                  pcall(callback, toggled)
 						else
 				TweenService:Create(
 							Icon,
@@ -3288,12 +3289,4 @@ function DiscordLib:Window(text)
 	end
 	return ServerHold
 end
-local win = DiscordLib:Window("discord library")
-
-local serv = win:Server("Preview", "")
-
-local tgls = serv:Channel("Toggles")
-
-tgls:Toggle("Auto-Farm", true, function(bool)
-    print(bool)
-end)
+return DiscordLib
