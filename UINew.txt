@@ -2217,7 +2217,7 @@ function DiscordLib:Window(text)
 				ToggleTitle.Size = UDim2.new(0, 200, 0, 30)
 				ToggleTitle.Font = Enum.Font.Gotham
 				ToggleTitle.Text = text
-				ToggleTitle.TextColor3 = Color3.fromRGB(127, 131, 137)
+				ToggleTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 				ToggleTitle.TextSize = 14.000
 				ToggleTitle.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -2374,7 +2374,7 @@ function DiscordLib:Window(text)
 				SliderTitle.Size = UDim2.new(0, 200, 0, 27)
 				SliderTitle.Font = Enum.Font.Gotham
 				SliderTitle.Text = text
-				SliderTitle.TextColor3 = Color3.fromRGB(127, 131, 137)
+				SliderTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 				SliderTitle.TextSize = 14.000
 				SliderTitle.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -2566,7 +2566,7 @@ function DiscordLib:Window(text)
 				DropdownTitle.Size = UDim2.new(0, 200, 0, 29)
 				DropdownTitle.Font = Enum.Font.Gotham
 				DropdownTitle.Text = text
-				DropdownTitle.TextColor3 = Color3.fromRGB(127, 131, 137)
+				DropdownTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 				DropdownTitle.TextSize = 14.000
 				DropdownTitle.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -3190,9 +3190,9 @@ function DiscordLib:Window(text)
 			function ChannelContent:Label(text)
 				local Label = Instance.new("TextButton")
 				local LabelTitle = Instance.new("TextLabel")
-				local labelfunc = {}
+            local labelfunc = {}
 				Label.Name = "Label"
-				
+            
 				Label.Parent = ChannelHolder
 				Label.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
 				Label.BorderSizePixel = 0
@@ -3217,11 +3217,13 @@ function DiscordLib:Window(text)
 				LabelTitle.TextXAlignment = Enum.TextXAlignment.Left
 				
 				ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
-				function labelfunc:Refresh(tochange)
-			        Label.Text = tochange
-			        end
-			        return labelfunc
-			end
+
+            function labelfunc:Refresh(tochange)
+            Label.Text = tochange
+            end
+            return labelfunc
+  	         end
+         
 			
 			function ChannelContent:Bind(text, presetbind, callback)
 				local Key = presetbind.Name
