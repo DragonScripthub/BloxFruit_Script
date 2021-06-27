@@ -77,7 +77,8 @@ mobnewlist = {
        elseif SelectMob == moblist[18] then
        Telemon = CFrame.new(5595.06982, 41.5013695, 3961.47095)
       end
-  elseif newworld then
+      end
+  if newworld then
   	if SelectMob == mobnewlist[1] then
 	Telemon = CFrame.new(-227.763931, 39.119751, 2379.95093)
 	elseif SelectMob == mobnewlist[2] then
