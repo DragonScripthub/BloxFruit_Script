@@ -18,6 +18,26 @@ local moblist = {
 	"Shanda [Lv. 475]", 
 	"Galley Pirate [Lv. 625]"
 }
+mobnewlist = {
+        "Raider [Lv. 700]",
+        "Swan Pirate [Lv. 775]",
+        "Marine Captain [Lv. 900]",
+        "Zombie [Lv. 950]",
+        "Vampire [Lv. 975]",
+        "Snow Trooper [Lv. 1000]",
+        "Winter Warrior [Lv. 1050]",
+        "Lab Subordinate [Lv. 1100]",
+        "Horned Warrior [Lv. 1125]",
+        "Magma Ninja [Lv. 1175]",
+        "Lava Pirate [Lv. 1200]",
+        "Ship Deckhand [Lv. 1250]",
+        "Ship Engineer [Lv. 1275]",
+        "Ship Officer [Lv. 1325]",
+        "Arctic Warrior [Lv. 1350]",
+	"Snow Lurker [Lv. 1375]",
+        "Sea Soldier [Lv. 1425]",
+        "Water Fighter [Lv. 1450]"
+    }
   function CheckMob()
   if OldWorld then
      if SelectMob == moblist[1] then
@@ -57,5 +77,43 @@ local moblist = {
        elseif SelectMob == moblist[18] then
        Telemon = CFrame.new(5595.06982, 41.5013695, 3961.47095)
       end
+  elseif newworld then
+  	if SelectMob == mobnewlist[1] then
+	Telemon = CFrame.new(-227.763931, 39.119751, 2379.95093)
+	elseif SelectMob == mobnewlist[2] then
+	Telemon = CFrame.new(870.331299, 121.582191, 1189.57397)
+	elseif SelectMob == mobnewlist[3] then
+	Telemon = CFrame.new(-1991.15393, 72.9661407, -3330.58911)
+	elseif SelectMob == mobnewlist[4] then
+	Telemon = CFrame.new(-5788.71094, 99.8957367, -763.72522)
+	elseif SelectMob == mobnewlist[5] then
+	Telemon = CFrame.new(-6040.146, 6.40269899, -1331.36841)
+	elseif SelectMob == mobnewlist[6] then
+	Telemon = CFrame.new(544.150024, 427.901154, -5557.50098)
+	elseif SelectMob == mobnewlist[7] then
+	Telemon = CFrame.new(1212.8678, 452.556152, -5048.27783)
+	elseif SelectMob == mobnewlist[8] then
+	Telemon = CFrame.new(-5780.26953, 42.5417252, -4482.85059)
+	elseif SelectMob == mobnewlist[9] then
+	Telemon = CFrame.new(-6399.67236, 24.5726585, -5817.94189)
+	elseif SelectMob == mobnewlist[10] then
+	Telemon = CFrame.new(-5417.72656, 20.9040947, -5903.48975)
+	elseif SelectMob == mobnewlist[11] then
+	Telemon = CFrame.new(-5198.94092, 50.81567, -4710.98291)
+	elseif SelectMob == mobnewlist[12] then
+	Telemon = CFrame.new(1036.8103, 125.057129, 32916.1016)
+	elseif SelectMob == mobnewlist[13] then
+	Telemon = CFrame.new(908.979431, 40.0569, 32740.9746)
+	elseif SelectMob == mobnewlist[14] then
+	Telemon = CFrame.new(939.161438, 181.057556, 33289.8086)
+	elseif SelectMob == mobnewlist[15] then
+	Telemon = CFrame.new(5960.57764, 62.1910858, -6198.72559)
+	elseif SelectMob == mobnewlist[16] then
+	Telemon = CFrame.new(5514.10596, 60.5210114, -6829.01465)
+	elseif SelectMob == mobnewlist[17] then
+	Telemon = CFrame.new(-3119.82397, 58.2038002, -9634.39355)
+	elseif SelectMob == mobnewlist[18] then
+	Telemon = CFrame.new(-3468.87793, 264.477692, -10595.3447)
+	end
   end
   end
