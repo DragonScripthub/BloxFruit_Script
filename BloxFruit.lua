@@ -40,18 +40,12 @@ if data.Key == getgenv().Key then
         if data.Hwid == hwid then
             print("Wait For Script")
             --loadstring(game:HttpGet("https://github.com/exxtremestuffs/SimpleSpySource/raw/master/SimpleSpy.lua"))()
-        else
-            game.Players.LocalPlayer:Kick("คุณพยายามรันเครื่องอื่น")
-        end
-        if data.Hwid == "Unknown" then
-        -- update hwid
-        
+	elseif data.Hwid == "Unknown" then
          http_request_get("http://localhost/changehwid.php?key=".. getgenv().Key .."&hwid="..hwid)
          game.Players.LocalPlayer:Kick("\nUpdate Whitelist สำเร็จ\nรันใหม่อีกครั้ง")
         else
-        -- no update hwid
-         --print("Whitelist !!!")
-         end
+            game.Players.LocalPlayer:Kick("คุณพยายามรันเครื่องอื่น")
+        end 
     else
         game.Players.LocalPlayer:Kick("\nKey ติด Blacklist")
     end
