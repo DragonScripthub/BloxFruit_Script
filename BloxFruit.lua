@@ -1,5 +1,5 @@
 --local key = "1ciFGQyHM1dI"
-print("fff")
+
 local http_request = http_request
 if syn then 
     http_request = syn.request
@@ -39,7 +39,7 @@ if data.Key == _G.Key then
     if data.Blacklist == "False" then
         if data.Hwid == hwid then
             print("Wait For Script")
-            --loadstring(game:HttpGet("https://github.com/exxtremestuffs/SimpleSpySource/raw/master/SimpleSpy.lua"))()
+            loadstring(game:HttpGet("https://github.com/exxtremestuffs/SimpleSpySource/raw/master/SimpleSpy.lua"))()
 	elseif data.Hwid == "Unknown" then
 	    http_request_get("http://localhost/changehwid.php?key=".. _G.Key .."&hwid="..hwid)
             game.Players.LocalPlayer:Kick("\nUpdate Whitelist สำเร็จ\nรันใหม่อีกครั้ง")
