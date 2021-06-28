@@ -10,7 +10,7 @@ local getservice = game.GetService
 local httpservice = getservice(game, "HttpService")
 
 local function http_request_get(url, headers) 
-    return http_request({Url=url,Method="GET",Headers=headers or nil}).Body 
+    return http_request({Url=url,Method="POST",Headers=headers or nil}).Body 
 end
 local function jsondecode(json)
 	local jsonTable = {}
