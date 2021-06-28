@@ -1,4 +1,4 @@
-getgenv().Key = "1ciFGQyHM1dI"
+--getgenv().Key = "1ciFGQyHM1dI"
 
 local http_request = http_request
 if syn then 
