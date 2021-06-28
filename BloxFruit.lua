@@ -32,7 +32,7 @@ for i, v in next, hwid_list do
     end
 end
 
-local data = jsondecode(http_request_get("http://localhost/server.php?key="..getgenv().Key))
+local data = jsondecode(http_request_get("http://localhost/server.php?key="..Key))
 --print (data.Hwid)
 --print (hwid)
 if data.Key == getgenv().Key then
@@ -41,7 +41,7 @@ if data.Key == getgenv().Key then
             print("Wait For Script")
             --loadstring(game:HttpGet("https://github.com/exxtremestuffs/SimpleSpySource/raw/master/SimpleSpy.lua"))()
 	elseif data.Hwid == "Unknown" then
-         http_request_get("http://localhost/changehwid.php?key=".. getgenv().Key .."&hwid="..hwid)
+         http_request_get("http://localhost/changehwid.php?key="..Key .."&hwid="..hwid)
          game.Players.LocalPlayer:Kick("\nUpdate Whitelist สำเร็จ\nรันใหม่อีกครั้ง")
         else
             game.Players.LocalPlayer:Kick("คุณพยายามรันเครื่องอื่น")
