@@ -1,4 +1,4 @@
-local key = "1ciFGQyHM1dI"
+getgenv().Key = "1ciFGQyHM1dI"
 
 local http_request = http_request
 if syn then 
@@ -32,10 +32,10 @@ for i, v in next, hwid_list do
     end
 end
 
-local data = jsondecode(http_request_get("http://localhost/server.php?key="..key))
+local data = jsondecode(http_request_get("http://localhost/server.php?key="..getgenv().Key))
 --print (data.Hwid)
 --print (hwid)
-if data.Key == key then
+if data.Key == getgenv().Key then
     if data.Blacklist == "False" then
         if data.Hwid == hwid then
             print("Wait For Script")
@@ -46,7 +46,7 @@ if data.Key == key then
         if data.Hwid == "Unknown" then
         -- update hwid
         
-         http_request_get("http://localhost/changehwid.php?key=".. key .."&hwid="..hwid)
+         http_request_get("http://localhost/changehwid.php?key=".. getgenv().Key .."&hwid="..hwid)
          game.Players.LocalPlayer:Kick("\nUpdate Whitelist สำเร็จ\nรันใหม่อีกครั้ง")
         else
         -- no update hwid
