@@ -3157,7 +3157,7 @@ function DiscordLib:Window(text)
 				TextBox.PlaceholderText = placetext
 				TextBox.Text = ""
 				TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
-				TextBox.TextSize = 20.000
+				TextBox.TextSize = 14.000
 				TextBox.TextXAlignment = Enum.TextXAlignment.Left
 				
 				TextBox.Focused:Connect(function()
