@@ -3121,7 +3121,7 @@ function DiscordLib:Window(text)
 				TextboxTitle.Font = Enum.Font.Gotham
 				TextboxTitle.Text = text
 				TextboxTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
-				TextboxTitle.TextSize = 14.000
+				TextboxTitle.TextSize = 20.000
 				TextboxTitle.TextXAlignment = Enum.TextXAlignment.Left
 
 				TextboxFrameOutline.Name = "TextboxFrameOutline"
