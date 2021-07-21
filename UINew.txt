@@ -111,7 +111,6 @@ function DiscordLib:Window(text)
 	local MainFrame = Instance.new("Frame")
 	local TopFrame = Instance.new("Frame")
 	local Title = Instance.new("TextLabel")
-	local CloseBtn = Instance.new("TextButton")
 	local CloseIcon = Instance.new("ImageLabel")
 	local MinimizeBtn = Instance.new("TextButton")
 	local MinimizeIcon = Instance.new("ImageLabel")
@@ -165,28 +164,6 @@ function DiscordLib:Window(text)
 	Title.TextColor3 = Color3.fromRGB(99, 102, 109)
 	Title.TextSize = 13.000
 	Title.TextXAlignment = Enum.TextXAlignment.Left
-
-	CloseBtn.Name = "CloseBtn"
-	CloseBtn.Parent = TopFrame
-	CloseBtn.BackgroundColor3 = Color3.fromRGB(32, 34, 37)
-	CloseBtn.BackgroundTransparency = 0
-	CloseBtn.Position = UDim2.new(0.959063113, 0, -0.0169996787, 0)
-	CloseBtn.Size = UDim2.new(0, 28, 0, 22)
-	CloseBtn.Font = Enum.Font.Gotham
-	CloseBtn.Text = ""
-	CloseBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
-	CloseBtn.TextSize = 14.000
-	CloseBtn.BorderSizePixel = 0
-	CloseBtn.AutoButtonColor = false
-
-	CloseIcon.Name = "CloseIcon"
-	CloseIcon.Parent = CloseBtn
-	CloseIcon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	CloseIcon.BackgroundTransparency = 1.000
-	CloseIcon.Position = UDim2.new(0.189182192, 0, 0.128935531, 0)
-	CloseIcon.Size = UDim2.new(0, 17, 0, 17)
-	CloseIcon.Image = "http://www.roblox.com/asset/?id=6035047409"
-	CloseIcon.ImageColor3 = Color3.fromRGB(220, 221, 222)
 
 	MinimizeBtn.Name = "MinimizeButton"
 	MinimizeBtn.Parent = TopFrame
@@ -302,24 +279,7 @@ function DiscordLib:Window(text)
 	ServersHoldPadding.Name = "ServersHoldPadding"
 	ServersHoldPadding.Parent = ServersHold
 
-	CloseBtn.MouseButton1Click:Connect(
-		function()
-			MainFrame:TweenSize(UDim2.new(0, 0, 0, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
-		end
-	)
-
-	CloseBtn.MouseEnter:Connect(
-		function()
-			CloseBtn.BackgroundColor3 = Color3.fromRGB(240, 71, 71)
-		end
-	)
-
-	CloseBtn.MouseLeave:Connect(
-		function()
-			CloseBtn.BackgroundColor3 = Color3.fromRGB(32, 34, 37)
-		end
-	)
-
+	
 	MinimizeBtn.MouseEnter:Connect(
 		function()
 			MinimizeBtn.BackgroundColor3 = Color3.fromRGB(40, 43, 46)
