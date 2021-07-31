@@ -1837,7 +1837,7 @@ function DiscordLib:Window(text)
 		ServerChannelHolder.BorderSizePixel = 0
 		ServerChannelHolder.Position = UDim2.new(0.00535549596, 0, 0.0241984241, 0)
 		ServerChannelHolder.Selectable = false
-		ServerChannelHolder.Size = UDim2.new(0, 179, 0, 278)
+		ServerChannelHolder.Size = UDim2.new(0, 179, 0, 400)
 		ServerChannelHolder.CanvasSize = UDim2.new(0, 0, 0, 0)
 		ServerChannelHolder.ScrollBarThickness = 4
 		ServerChannelHolder.ScrollBarImageColor3 = Color3.fromRGB(18, 19, 21)
@@ -3256,5 +3256,6 @@ function DiscordLib:Window(text)
 	end
 	return ServerHold
 end
+
 
 return DiscordLib
