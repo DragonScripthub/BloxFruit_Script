@@ -131,15 +131,15 @@ function DiscordLib:Window(text)
 	MainFrame.Name = "MainFrame"
 	MainFrame.Parent = Discord
 	MainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
-	MainFrame.BackgroundColor3 = Color3.fromRGB(32, 34, 37)
+	MainFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 	MainFrame.BorderSizePixel = 0
 	MainFrame.ClipsDescendants = true
 	MainFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
-	MainFrame.Size = UDim2.new(0, 681, 0, 396)
+	MainFrame.Size = UDim2.new(0, 618, 0, 402)
 
 	TopFrame.Name = "TopFrame"
 	TopFrame.Parent = MainFrame
-	TopFrame.BackgroundColor3 = Color3.fromRGB(32, 34, 37)
+	TopFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 	TopFrame.BackgroundTransparency = 1.000
 	TopFrame.BorderSizePixel = 0
 	TopFrame.Position = UDim2.new(-0.000658480625, 0, 0, 0)
@@ -151,7 +151,7 @@ function DiscordLib:Window(text)
 	TopFrameHolder.BackgroundTransparency = 1.000
 	TopFrameHolder.BorderSizePixel = 0
 	TopFrameHolder.Position = UDim2.new(-0.000658480625, 0, 0, 0)
-	TopFrameHolder.Size = UDim2.new(0, 681, 0, 22)
+	TopFrameHolder.Size = UDim2.new(0, 70, 0, 22)
 
 	Title.Name = "Title"
 	Title.Parent = TopFrame
@@ -161,7 +161,7 @@ function DiscordLib:Window(text)
 	Title.Size = UDim2.new(0, 192, 0, 23)
 	Title.Font = Enum.Font.Gotham
 	Title.Text = text
-	Title.TextColor3 = Color3.fromRGB(99, 102, 109)
+	Title.TextColor3 = Color3.fromRGB(245, 248, 255)
 	Title.TextSize = 13.000
 	Title.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -1701,11 +1701,11 @@ function DiscordLib:Window(text)
 
 		ServerFrame.Name = "ServerFrame"
 		ServerFrame.Parent = ServersHolder
-		ServerFrame.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
+		ServerFrame.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
 		ServerFrame.BorderSizePixel = 0
 		ServerFrame.ClipsDescendants = true
 		ServerFrame.Position = UDim2.new(0.105726875, 0, 1.01262593, 0)
-		ServerFrame.Size = UDim2.new(0, 609, 0, 373)
+		ServerFrame.Size = UDim2.new(3, 395, 0, 373)
 		ServerFrame.Visible = false
 
 		ServerFrame1.Name = "ServerFrame1"
@@ -1778,7 +1778,7 @@ function DiscordLib:Window(text)
 
 		ChannelTitleFrame.Name = "ChannelTitleFrame"
 		ChannelTitleFrame.Parent = ServerFrame
-		ChannelTitleFrame.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
+		ChannelTitleFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 31)
 		ChannelTitleFrame.BorderSizePixel = 0
 		ChannelTitleFrame.Position = UDim2.new(0.294561088, 0, -0.000900391256, 0)
 		ChannelTitleFrame.Size = UDim2.new(0, 429, 0, 40)
@@ -1810,7 +1810,7 @@ function DiscordLib:Window(text)
 
 		ChannelContentFrame.Name = "ChannelContentFrame"
 		ChannelContentFrame.Parent = ServerFrame
-		ChannelContentFrame.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
+		ChannelContentFrame.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
 		ChannelContentFrame.BorderSizePixel = 0
 		ChannelContentFrame.ClipsDescendants = true
 		ChannelContentFrame.Position = UDim2.new(0.294561088, 0, 0.106338218, 0)
@@ -1837,7 +1837,7 @@ function DiscordLib:Window(text)
 		ServerChannelHolder.BorderSizePixel = 0
 		ServerChannelHolder.Position = UDim2.new(0.00535549596, 0, 0.0241984241, 0)
 		ServerChannelHolder.Selectable = false
-		ServerChannelHolder.Size = UDim2.new(0, 179, 0, 278)
+		ServerChannelHolder.Size = UDim2.new(0, 179, 0, 400)
 		ServerChannelHolder.CanvasSize = UDim2.new(0, 0, 0, 0)
 		ServerChannelHolder.ScrollBarThickness = 4
 		ServerChannelHolder.ScrollBarImageColor3 = Color3.fromRGB(18, 19, 21)
@@ -1996,7 +1996,7 @@ function DiscordLib:Window(text)
 
 			ChannelBtn.Name = text .. "ChannelBtn"
 			ChannelBtn.Parent = ServerChannelHolder
-			ChannelBtn.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
+			ChannelBtn.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
 			ChannelBtn.BorderSizePixel = 0
 			ChannelBtn.Position = UDim2.new(0.24118948, 0, 0.578947365, 0)
 			ChannelBtn.Size = UDim2.new(0, 160, 0, 30)
@@ -2019,7 +2019,7 @@ function DiscordLib:Window(text)
 			ChannelBtnHashtag.Size = UDim2.new(0, 24, 0, 30)
 			ChannelBtnHashtag.Font = Enum.Font.Gotham
 			ChannelBtnHashtag.Text = "#"
-			ChannelBtnHashtag.TextColor3 = Color3.fromRGB(114, 118, 125)
+			ChannelBtnHashtag.TextColor3 = Color3.fromRGB(253, 254, 255)
 			ChannelBtnHashtag.TextSize = 21.000
 
 			ChannelBtnTitle.Name = "ChannelBtnTitle"
@@ -2031,7 +2031,7 @@ function DiscordLib:Window(text)
 			ChannelBtnTitle.Size = UDim2.new(0, 95, 0, 39)
 			ChannelBtnTitle.Font = Enum.Font.Gotham
 			ChannelBtnTitle.Text = text
-			ChannelBtnTitle.TextColor3 = Color3.fromRGB(114, 118, 125)
+			ChannelBtnTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 			ChannelBtnTitle.TextSize = 14.000
 			ChannelBtnTitle.TextXAlignment = Enum.TextXAlignment.Left
 			ServerChannelHolder.CanvasSize = UDim2.new(0, 0, 0, ServerChannelHolderLayout.AbsoluteContentSize.Y)
@@ -2061,15 +2061,15 @@ function DiscordLib:Window(text)
 			
 			ChannelBtn.MouseEnter:Connect(function()
 				if currentchanneltoggled ~= ChannelBtn.Name then
-				ChannelBtn.BackgroundColor3 = Color3.fromRGB(52,55,60)
+				ChannelBtn.BackgroundColor3 = Color3.fromRGB(6, 6, 255)
 					ChannelBtnTitle.TextColor3 = Color3.fromRGB(220,221,222)
 				end
 			end)
 			
 			ChannelBtn.MouseLeave:Connect(function()
 				if currentchanneltoggled ~= ChannelBtn.Name then
-				ChannelBtn.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
-				ChannelBtnTitle.TextColor3 = Color3.fromRGB(114, 118, 125)
+				ChannelBtn.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+				ChannelBtnTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 				end
 			end)
 			
@@ -2082,21 +2082,21 @@ function DiscordLib:Window(text)
 				end
 				for i, v in next, ServerChannelHolder:GetChildren() do
 					if v.ClassName == "TextButton" then
-						v.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
-						v.ChannelBtnTitle.TextColor3 = Color3.fromRGB(114, 118, 125)
+						v.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+						v.ChannelBtnTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 					end
 					ServerFrame.Visible = true
 				end
 				ChannelTitle.Text = text
-				ChannelBtn.BackgroundColor3 = Color3.fromRGB(57,60,67)
-				ChannelBtnTitle.TextColor3 = Color3.fromRGB(255,255,255)
+				ChannelBtn.BackgroundColor3 = Color3.fromRGB(6, 6, 255)
+				ChannelBtnTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 				currentchanneltoggled = ChannelBtn.Name
 			end)
 			
 			if fc == false then
 				fc = true
 				ChannelTitle.Text = text
-				ChannelBtn.BackgroundColor3 = Color3.fromRGB(57,60,67)
+				ChannelBtn.BackgroundColor3 = Color3.fromRGB(6, 6, 255)
 				ChannelBtnTitle.TextColor3 = Color3.fromRGB(255,255,255)
 				currentchanneltoggled = ChannelBtn.Name
 				ChannelHolder.Visible = true
@@ -2159,7 +2159,7 @@ function DiscordLib:Window(text)
 
 				Toggle.Name = "Toggle"
 				Toggle.Parent = ChannelHolder
-				Toggle.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
+				Toggle.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
 				Toggle.BorderSizePixel = 0
 				Toggle.Position = UDim2.new(0.261979163, 0, 0.190789461, 0)
 				Toggle.Size = UDim2.new(0, 401, 0, 30)
@@ -2316,7 +2316,7 @@ function DiscordLib:Window(text)
 
 				Slider.Name = "Slider"
 				Slider.Parent = ChannelHolder
-				Slider.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
+				Slider.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
 				Slider.BorderSizePixel = 0
 				Slider.Position = UDim2.new(0, 0, 0.216560602, 0)
 				Slider.Size = UDim2.new(0, 401, 0, 38)
@@ -3154,7 +3154,7 @@ function DiscordLib:Window(text)
 				Label.Name = "Label"
             
 				Label.Parent = ChannelHolder
-				Label.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
+				Label.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
 				Label.BorderSizePixel = 0
 				Label.Position = UDim2.new(0.261979163, 0, 0.190789461, 0)
 				Label.Size = UDim2.new(0, 401, 0, 30)
@@ -3256,4 +3256,6 @@ function DiscordLib:Window(text)
 	end
 	return ServerHold
 end
+
+
 return DiscordLib
