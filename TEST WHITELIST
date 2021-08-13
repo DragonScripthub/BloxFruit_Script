@@ -436,7 +436,7 @@ function bringallmob(kai)
                -- v.Humanoid.Archivable = false 
                -- v.HumanoidRootPart.Archivable = false
                 if bring then
-                v.HumanoidRootPart.CFrame =  game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0, 15, 0) 
+                v.HumanoidRootPart.CFrame = PosMon * CFrame.new(0, 0, 2) 
                    
                   --  v.Humanoid.PlatformStand = true
                 end
